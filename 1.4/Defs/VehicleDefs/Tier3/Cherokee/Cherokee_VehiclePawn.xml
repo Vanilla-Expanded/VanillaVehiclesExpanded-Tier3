@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleDef ParentName="VehiclePawn_Mechanical">
+		<defName>VVE_Cherokee</defName>
+		<label>Cherokee</label>
+		<description>A heavy duty transport aircraft, the Cherokee is a hulking monstrosity of aeronautical engineering. Very slow due to all the bulk, equally thirsty, and sports massive cargo capacity. Plan accordingly.\n\nA dedicated transport helicopter with a modified cargo bay, it requires two pilots to operate and frequent refueling. However, nothing comes even close to bulk transportation at its tech level.</description>
+		
+		<graphicData>
+			<texPath>Things/Vehicles/Tier3/Tier3_CargoHelicopter/Tier3_CargoHelicopter</texPath>
+			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+			<drawSize>(5,12)</drawSize>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<color>(75, 75, 75)</color>
+		</graphicData>
+		
+		<fillPercent>1</fillPercent>
+		
+		<buildDef>VVE_Cherokee_Blueprint</buildDef>
+
+		<size>(3,10)</size>
+		
+		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
+		<vehicleCategory>Transport</vehicleCategory>
+		<techLevel>Industrial</techLevel>
+		<vehicleType>Air</vehicleType>
+		
+		<statBases>
+			<ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.52</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<MarketValue>8120</MarketValue>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		
+		<vehicleStats>
+			<Mass>1200</Mass>
+			<MoveSpeed LockSetting = "True">0.5</MoveSpeed>
+			<CargoCapacity>8120</CargoCapacity>
+			<RepairRate>1</RepairRate>
+			<FlightSpeed>10.5</FlightSpeed>
+		</vehicleStats>
+		
+		<soundSustainersOnEvent>
+			<li>
+				<key>(IgnitionOn, IgnitionOff)</key>
+				<value>VVE_VehicleDualRotorHelicoper</value>
+			</li>
+			<li>
+				<key>(AerialVehicleLaunch, AerialVehicleLeftMap)</key>
+				<value>VVE_VehicleDualRotorHelicoper</value>
+			</li>
+			<li>
+				<key>(AerialVehicleLanding, Spawned)</key>
+				<value>VVE_VehicleDualRotorHelicoper</value>
+			</li>
+			<li>
+				<key>(AerialVehicleCrashLanding, Spawned)</key>
+				<value>VVE_VehicleDualRotorHelicoper</value>
+			</li>
+		</soundSustainersOnEvent>
+		
+		<race>
+			<baseBodySize>2.25</baseBodySize>
+		</race>
+		
+		<drawProperties>
+			<graphicOverlays>
+				<li>
+					<rotation>0</rotation>
+					<graphicData>
+						<texPath>Things/Vehicles/Tier3/Tier3_CargoHelicopter/Tier3_CargoHelicopter_RotorTop</texPath>
+						<graphicClass>Vehicles.Graphic_ReversePropeller</graphicClass>
+						<drawSize>(11, 11)</drawSize>
+						<drawOffsetNorth>(-0.04, 0, 4.05)</drawOffsetNorth>
+						<drawOffsetEast>(4.6, 0, 1.43)</drawOffsetEast>
+						<drawOffsetSouth>(0.02, 0, -1.93)</drawOffsetSouth>
+						<drawOffsetWest>(-4.6, 0, 1.43)</drawOffsetWest>
+						<layer>1</layer>
+						<shaderType>Cutout</shaderType>
+					</graphicData>
+				</li>
+				<li>
+					<rotation>0</rotation>
+					<graphicData>
+						<texPath>Things/Vehicles/Tier3/Tier3_CargoHelicopter/Tier3_CargoHelicopter_RotorTop</texPath>
+						<graphicClass>Vehicles.Graphic_Propeller</graphicClass>
+						<drawSize>(11, 11)</drawSize>
+						<drawOffsetNorth>(-0.04, 0, -1.73)</drawOffsetNorth>
+						<drawOffsetEast>(-4.35, 0, 1.96)</drawOffsetEast>
+						<drawOffsetSouth>(0.02, 0, 4.97)</drawOffsetSouth>
+						<drawOffsetWest>(4.35, 0, 1.96)</drawOffsetWest>
+						<layer>1</layer>
+						<shaderType>Cutout</shaderType>
+					</graphicData>
+				</li>
+			</graphicOverlays>
+		</drawProperties>
+		
+		<properties>
+			<vehicleJobLimitations>
+				<li>(RepairVehicle, 4)</li>
+			</vehicleJobLimitations>
+			
+			<roles>
+				<li>
+					<key>pilot</key>
+					<label>Pilot</label>
+					<slots>2</slots>
+					<slotsToOperate>2</slotsToOperate>
+					
+					<handlingTypes>
+						<li>Movement</li>
+					</handlingTypes>
+				</li>
+			</roles>
+		</properties>
+		
+		<components>
+			<li>
+				<key>FrontEngine</key>
+				<label>Front Engine</label>
+				<health>60</health>
+				<priorityStatEfficiency>true</priorityStatEfficiency>
+				<depth>Internal</depth>
+				
+				<reactors>
+					<li Class = "Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.25</chance>
+						<radius>3</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>
+				
+				<categories>
+					<li>MoveSpeed</li>
+					<li>FlightControl</li>
+					<li>FlightSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>RearEngine</key>
+				<label>Rear Engine</label>
+				<health>60</health>
+				<priorityStatEfficiency>true</priorityStatEfficiency>
+				<depth>Internal</depth>
+				
+				<reactors>
+					<li Class = "Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.25</chance>
+						<radius>3</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>
+				
+				<categories>
+					<li>MoveSpeed</li>
+					<li>FlightControl</li>
+					<li>FlightSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontLeftLandingWheel</key>
+				<label>Front Left Landing Wheel</label>
+				<health>40</health>
+				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0</ArmorRating_Sharp>
+				</armor>
+				
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(-1, 2)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontRightLandingWheel</key>
+				<label>Front Right Landing Wheel</label>
+				<health>40</health>
+				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0</ArmorRating_Sharp>
+				</armor>
+				
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(1, 2)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>RearLeftLandingWheel</key>
+				<label>Rear Left Landing Wheel</label>
+				<health>40</health>
+				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0</ArmorRating_Sharp>
+				</armor>
+				
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(1, -2)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>RearRightLandingWheel</key>
+				<label>Rear Right Landing Wheel</label>
+				<health>40</health>
+				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0</ArmorRating_Sharp>
+				</armor>
+				
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(1, -2)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontLeftSuspension</key>
+				<label>Front Left Suspension</label>
+				<health>20</health>
+				<depth>Internal</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(0, 2)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontEngineCover</key>
+				<label>Front Engine Cover</label>
+				<health>120</health>
+				<depth>External</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(0, 3)</li>
+						<li>(0, 4)</li>
+						<li>(0, 5)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>RearEngineCover</key>
+				<label>Rear Engine Cover</label>
+				<health>120</health>
+				<depth>External</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(0, -1)</li>
+						<li>(0, -2)</li>
+						<li>(0, -3)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>LeftFuelIntake</key>
+				<label>Left Fuel Intake</label>
+				<health>50</health>
+				<depth>External</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(-1, -1)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>RightFuelIntake</key>
+				<label>Right Fuel Intake</label>
+				<health>50</health>
+				<depth>External</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(1, -1)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>FrontTransmission</key>
+				<label>Front Transmission</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				
+				<categories>
+					<li>FlightSpeed</li>
+					<li>FlightControl</li>
+				</categories>
+			</li>
+			<li>
+				<key>RearTransmission</key>
+				<label>Rear Transmission</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				
+				<categories>
+					<li>FlightSpeed</li>
+					<li>FlightControl</li>
+				</categories>
+			</li>
+			<li>
+				<key>LeftTurboShaft</key>
+				<label>Left Turbo Shaft</label>
+				<health>100</health>
+				<depth>External</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(-1, -1)</li>
+						<li>(-1, -2)</li>
+						<li>(-1, -3)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>FlightSpeed</li>
+					<li>FlightControl</li>
+				</categories>
+			</li>
+			<li>
+				<key>RightTurboShaft</key>
+				<label>Right Turbo Shaft</label>
+				<health>100</health>
+				<depth>External</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(1, -1)</li>
+						<li>(1, -2)</li>
+						<li>(1, -3)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>FlightSpeed</li>
+					<li>FlightControl</li>
+				</categories>
+			</li>
+			<li>
+				<key>LeftFrontalPanel</key>
+				<label>Left Frontal Panel</label>
+				<health>120</health>
+				<depth>External</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(-1, 5)</li>
+						<li>(-1, 4)</li>
+						<li>(-1, 3)</li>
+						<li>(-1, 2)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>RightFrontalPanel</key>
+				<label>Right Frontal Panel</label>
+				<health>120</health>
+				<depth>External</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(1, 5)</li>
+						<li>(1, 4)</li>
+						<li>(1, 3)</li>
+						<li>(1, 2)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>LeftRearPanel</key>
+				<label>Left Rear Panel</label>
+				<health>120</health>
+				<depth>External</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(-1, 1)</li>
+						<li>(-1, 0)</li>
+						<li>(-1, -1)</li>
+						<li>(-1, -2)</li>
+						<li>(-1, -3)</li>
+						<li>(-1, -4)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>RightRearPanel</key>
+				<label>Right Rear Panel</label>
+				<health>120</health>
+				<depth>External</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(1, 1)</li>
+						<li>(1, 0)</li>
+						<li>(1, -1)</li>
+						<li>(1, -2)</li>
+						<li>(1, -3)</li>
+						<li>(1, -4)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>Chemtank</key>
+				<label>Chemtank</label>
+				<health>120</health>
+				<depth>Internal</depth>
+				
+				<reactors>
+					<li Class = "Vehicles.Reactor_FuelLeak"/>
+				</reactors>
+			</li>
+			<li>
+				<key>FrontRotorMast</key>
+				<label>Front Rotor Mast</label>
+				<health>100</health>
+				<depth>External</depth>
+				<hitWeight>5</hitWeight>
+			</li>
+			<li>
+				<key>RearRotorMast</key>
+				<label>Rear Rotor Mast</label>
+				<health>100</health>
+				<depth>External</depth>
+				<hitWeight>5</hitWeight>
+			</li>
+			<li>
+				<key>Upholstery</key>
+				<label>Upholstery</label>
+				<health>30</health>
+				<depth>Internal</depth>
+				<hitWeight>2</hitWeight>
+			</li>
+			<li>
+				<key>Dashboard</key>
+				<label>Dashboard</label>
+				<health>40</health>
+				<depth>Internal</depth>
+				<hitWeight>2</hitWeight>
+			</li>
+			<li>
+				<key>Gearbox</key>
+				<label>Gearbox</label>
+				<health>80</health>
+				<depth>Internal</depth>
+			</li>
+			<li>
+				<key>FrontServos</key>
+				<label>Front Servos</label>
+				<health>100</health>
+				<depth>Internal</depth>
+				<hitWeight>2</hitWeight>
+			</li>
+			<li>
+				<key>RearServos</key>
+				<label>Rear Servos</label>
+				<health>100</health>
+				<depth>Internal</depth>
+				<hitWeight>2</hitWeight>
+			</li>
+		</components>
+		
+		<comps>
+			<li Class="Vehicles.CompProperties_FueledTravel">
+				<fuelType>Chemfuel</fuelType> <!-- Must Include -->
+				<fuelConsumptionRate>74.5</fuelConsumptionRate>
+				<fuelCapacity>420</fuelCapacity>
+			</li>
+			<li Class="Vehicles.CompProperties_VehicleLauncher">
+				<launchProtocol Class="Vehicles.PropellerTakeoff">
+					<launchProperties Class = "Vehicles.PropellerProtocolProperties">
+						<maxTicks>900</maxTicks>
+						<maxTicksVertical>900</maxTicksVertical>
+						<maxTicksPropeller>1400</maxTicksPropeller>
+						<forcedRotation>East</forcedRotation>
+						
+						<rotationCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, 0)</li>
+								<li>(0.06, 2.46)</li>
+								<li>(0.24, 4.15)</li>
+								<li>(0.35, 4.93)</li>
+								<li>(0.62, 4.67)</li>
+								<li>(0.83, 5.02)</li>
+								<li>(1, 5)</li>
+							</points>
+						</rotationCurve>
+						
+						<rotationVerticalCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, 0)</li>
+								<li>(0.06, -2.75)</li>
+								<li>(0.26, -2.75)</li>
+								<li>(0.44, 2.48)</li>
+								<li>(0.66, -0.39)</li>
+								<li>(0.96, -0.56)</li>
+								<li>(1, 1)</li>
+							</points>
+						</rotationVerticalCurve>
+						
+						<angularVelocityPropeller Class="SmashTools.BezierCurve">
+							<points>
+								<li>0, 0</li>
+								<li>0.5, 0</li>
+								<li>1, 48</li>
+							</points>
+						</angularVelocityPropeller>
+						
+						<xPositionCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, 0)</li>
+								<li>(0.19, 4)</li>
+								<li>(0.55, 14.98)</li>
+								<li>(0.62, 28.18)</li>
+								<li>(0.86, 46.57)</li>
+								<li>(1, 140)</li>
+							</points>
+						</xPositionCurve>
+						
+						<xPositionVerticalCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, 0)</li>
+								<li>(0.2, 0)</li>
+								<li>(0.4, 0)</li>
+								<li>(0.58, 1)</li>
+								<li>(0.79, 1)</li>
+								<li>(1, 5)</li>
+							</points>
+						</xPositionVerticalCurve>
+						
+						<zPositionCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, 0)</li>
+								<li>(0, 1.3)</li>
+								<li>(0.15, 1.14)</li>
+								<li>(0.31, 2.17)</li>
+								<li>(0.54, 1.47)</li>
+								<li>(0.7, 5.08)</li>
+								<li>(0.93, 5.12)</li>
+								<li>(1, 7.5)</li>
+							</points>
+						</zPositionCurve>
+						
+						<zPositionVerticalCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, 0)</li>
+								<li>(0.15, 0)</li>
+								<li>(0.85, 12.3)</li>
+								<li>(1, 15)</li>
+							</points>
+						</zPositionVerticalCurve>
+						
+						<fleckDataVertical>
+							<def>DustPuff</def>
+							<angle>0~360</angle>
+							<runOutOfStep>false</runOutOfStep>
+							
+							<airTime>
+								<points>
+									<li>(1, 0.5)</li>
+								</points>
+							</airTime>
+							
+							<drawOffset Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0, 3)</li>
+									<li>(0.25, 3)</li>
+									<li>(0.5, 3)</li>
+									<li>(0.75, 4)</li>
+									<li>(0.75, 6)</li>
+								</points>
+							</drawOffset>
+							
+							<frequency Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0, 160)</li>
+									<li>(0.25, 160)</li>
+									<li>(0.5, 160)</li>
+									<li>(0.75, 130)</li>
+									<li>(0.75, 0)</li>
+								</points>
+							</frequency>
+							
+							<rotationRate>
+								<points>
+									<li>(0, 3)</li>
+									<li>(1, 1)</li>
+								</points>
+							</rotationRate>
+							
+							<size Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0, 2.5)</li>
+									<li>(0.25, 1.64)</li>
+									<li>(0.75, 1.56)</li>
+									<li>(1, 1)</li>
+								</points>
+							</size>
+							
+							<speed>
+								<points>
+									<li>(0, 6)</li>
+									<li>(1, 3)</li>
+								</points>
+							</speed>
+						</fleckDataVertical>
+						
+						<fleckDataPropeller>
+							<def>DustPuff</def>
+							<angle>0~360</angle>
+							<runOutOfStep>false</runOutOfStep>
+							
+							<airTime>
+								<points>
+									<li>(0, 0.5)</li>
+								</points>
+							</airTime>
+							
+							<drawOffset Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0, 2)</li>
+									<li>(0.25, 2)</li>
+									<li>(0.5, 3)</li>
+									<li>(0.75, 3)</li>
+									<li>(1, 3)</li>
+								</points>
+							</drawOffset>
+							
+							<frequency Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0.2, 0)</li>
+									<li>(0.25, 20)</li>
+									<li>(0.75, 40)</li>
+									<li>(1, 160)</li>
+								</points>
+							</frequency>
+							
+							<rotationRate>
+								<points>
+									<li>(0, 1)</li>
+									<li>(1, 3)</li>
+								</points>
+							</rotationRate>
+							
+							<size Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0, 1)</li>
+									<li>(0.25, 1.56)</li>
+									<li>(0.75, 1.64)</li>
+									<li>(1, 2.5)</li>
+								</points>
+							</size>
+							
+							<speed>
+								<points>
+									<li>(0, 3)</li>
+									<li>(1, 6)</li>
+								</points>
+							</speed>
+						</fleckDataPropeller>
+					</launchProperties>
+					
+					<landingProperties Class = "Vehicles.PropellerProtocolProperties">
+						<maxTicks>600</maxTicks>
+						<maxTicksVertical>1400</maxTicksVertical>
+						<maxTicksPropeller>900</maxTicksPropeller>
+						<forcedRotation>East</forcedRotation>
+						
+						<angularVelocityPropeller Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, 59)</li>
+								<li>(0.5, 0)</li>
+								<li>(1, 0)</li>
+							</points>
+						</angularVelocityPropeller>
+						
+						<rotationCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, 10)</li>
+								<li>(0.2, 10)</li>
+								<li>(0.4, 10)</li>
+								<li>(0.68, 10)</li>
+								<li>(0.78, 6.74)</li>
+								<li>(0.69, 1.19)</li>
+								<li>(0.79, -2)</li>
+								<li>(1, -2)</li>
+							</points>
+						</rotationCurve>
+						
+						<rotationVerticalCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, 0)</li>
+								<li>(0.22, 4.57)</li>
+								<li>(0.44, 5.18)</li>
+								<li>(0.69, 3.37)</li>
+								<li>(0.79, 5.55)</li>
+								<li>(1, 2)</li>
+							</points>
+						</rotationVerticalCurve>
+						
+						<xPositionCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, -150)</li>
+								<li>(0.32, -120.12)</li>
+								<li>(0.49, -91.06)</li>
+								<li>(0.64, -66)</li>
+								<li>(0.73, -41.07)</li>
+								<li>(0.87, -29.64)</li>
+								<li>(1, -20)</li>
+							</points>
+						</xPositionCurve>
+						
+						<xPositionVerticalCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, -20)</li>
+								<li>(0.17, 6.65)</li>
+								<li>(0.3, 15)</li>
+								<li>(0.5, 20)</li>
+								<li>(0.75, 20)</li>
+								<li>(1, 20)</li>
+							</points>
+						</xPositionVerticalCurve>
+						
+						<zPositionCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, 5)</li>
+								<li>(0.25, 0.94)</li>
+								<li>(0.47, 0.46)</li>
+								<li>(0.74, 1.76)</li>
+								<li>(0.8, 0.58)</li>
+								<li>(1, 2.11)</li>
+							</points>
+						</zPositionCurve>
+						
+						<zPositionVerticalCurve Class="SmashTools.BezierCurve">
+							<points>
+								<li>(0, 15)</li>
+								<li>(0.15, 18.09)</li>
+								<li>(0.5, 14)</li>
+								<li>(0.75, 0)</li>
+								<li>(1, -2.11)</li>
+							</points>
+						</zPositionVerticalCurve>
+						
+						<fleckDataVertical>
+							<def>DustPuff</def>
+							<angle>0~360</angle>
+							<runOutOfStep>false</runOutOfStep>
+							
+							<airTime>
+								<points>
+									<li>(1, 0.5)</li>
+								</points>
+							</airTime>
+							
+							<drawOffset Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0, 6)</li>
+									<li>(0.25, 4)</li>
+									<li>(0.5, 3)</li>
+									<li>(0.75, 3)</li>
+									<li>(0.75, 3)</li>
+								</points>
+							</drawOffset>
+							
+							<frequency Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0.65, 0)</li>
+									<li>(0.65, 130)</li>
+									<li>(0.75, 160)</li>
+									<li>(0.75, 160)</li>
+									<li>(1, 160)</li>
+								</points>
+							</frequency>
+							
+							<rotationRate>
+								<points>
+									<li>(0, 3)</li>
+									<li>(1, 1)</li>
+								</points>
+							</rotationRate>
+							
+							<size Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0, 1)</li>
+									<li>(0.25, 1.56)</li>
+									<li>(0.75, 1.64)</li>
+									<li>(1, 2.5)</li>
+								</points>
+							</size>
+							
+							<speed>
+								<points>
+									<li>(0, 3)</li>
+									<li>(1, 6)</li>
+								</points>
+							</speed>
+						</fleckDataVertical>
+						
+						<fleckDataPropeller>
+							<def>DustPuff</def>
+							<angle>0~360</angle>
+							<runOutOfStep>false</runOutOfStep>
+							
+							<airTime>
+								<points>
+									<li>(0, 0.5)</li>
+								</points>
+							</airTime>
+							
+							<drawOffset Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0, 3)</li>
+									<li>(0.25, 3)</li>
+									<li>(0.5, 3)</li>
+									<li>(0.75, 2)</li>
+									<li>(1, 2)</li>
+								</points>
+							</drawOffset>
+							
+							<frequency Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0, 160)</li>
+									<li>(0.05, 40)</li>
+									<li>(0.55, 20)</li>
+									<li>(0.8, 0)</li>
+								</points>
+							</frequency>
+							
+							<rotationRate>
+								<points>
+									<li>(0, 3)</li>
+									<li>(1, 1)</li>
+								</points>
+							</rotationRate>
+							
+							<size Class="SmashTools.BezierCurve">
+								<points>
+									<li>(0, 2.5)</li>
+									<li>(0.25, 1.64)</li>
+									<li>(0.75, 1.56)</li>
+									<li>(1, 1)</li>
+								</points>
+							</size>
+							
+							<speed>
+								<points>
+									<li>(0, 6)</li>
+									<li>(1, 3)</li>
+								</points>
+							</speed>
+						</fleckDataPropeller>
+					</landingProperties>
+				</launchProtocol>
+			</li>
+		</comps>
+	</Vehicles.VehicleDef>
+</Defs>

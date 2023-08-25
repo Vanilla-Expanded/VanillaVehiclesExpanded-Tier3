@@ -129,7 +129,7 @@
 				<reactors>
 					<li Class = "Vehicles.Reactor_Explosive">
 						<indicator>VF_Explosive</indicator>
-						<chance>1</chance>
+						<chance>0.35</chance>
 						<maxHealth>0.3</maxHealth>
 						<radius>3</radius>
 						<damageDef>Bomb</damageDef>
@@ -471,7 +471,8 @@
 					<li Class = "Vehicles.Reactor_FuelLeak"/>
 					<li Class = "Vehicles.Reactor_Explosive">
 						<indicator>VF_Explosive</indicator>
-						<chance>0.1</chance>
+						<chance>0.5</chance>
+						<maxHealth>0.3</maxHealth>
 						<radius>3</radius>
 						<damageDef>Bomb</damageDef>
 					</li>

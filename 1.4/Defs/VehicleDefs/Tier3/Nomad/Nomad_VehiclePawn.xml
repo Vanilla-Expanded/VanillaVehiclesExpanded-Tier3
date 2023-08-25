@@ -2,12 +2,12 @@
 
 <Defs>
 	<Vehicles.VehicleDef ParentName="VehiclePawn_Mechanical">
-		<defName>VVE_Springbok</defName>
-		<label>Springbok</label>
-		<description>A general all-rounder vehicle, the Springbok performs well in all categories with a good cargo and passenger capacity. The old, robust build and loud engine negatively affect its fuel efficiency and visibility. Best suited on flat roads and will struggle somewhat on hills, snow or winter tiles.\n\nA slightly worse performer compared to tier 2 vehicles, it is instead a stylish vehicle to drive and will provide a mood boost to all passengers.</description>
+		<defName>VVE_Nomad</defName>
+		<label>Nomad</label>
+		<description>An armoured all-rounder vehicle, the Nomad performs remarkably well in all categories with an excellent cargo and passenger capacity. Performs well in any and all terrain, with some minor issues in the cold.\n\nA relatively general purpose tier 3, effectively being a lightly armoured APC. While it excels in off road capabilities and works well in all situations, other vehicles perform even better on roads or in specialized tasks.</description>
 		
 		<graphicData>
-			<texPath>Things/Vehicles/Tier3/Tier3_ClassicCar/Tier3_ClassicCar</texPath>
+			<texPath>Things/Vehicles/Tier3/Tier3_OffroadJeep/Tier3_OffroadJeep</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(3, 5)</drawSize>
@@ -16,7 +16,7 @@
 		
 		<fillPercent>0.8</fillPercent>
 		
-		<buildDef>VVE_Springbok_Blueprint</buildDef>
+		<buildDef>VVE_Nomad_Blueprint</buildDef>
 		
 		<size>(2, 4)</size>
 		
@@ -26,30 +26,32 @@
 		<vehicleType>Land</vehicleType>
 		
 		<statBases>
-			<ArmorRating_Blunt>0.32</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.56</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
-			<MarketValue>3000</MarketValue>
+			<MarketValue>2560</MarketValue>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		
 		<vehicleStats>
-			<Mass>240</Mass>
-			<MoveSpeed>13.4</MoveSpeed>
-			<CargoCapacity>300</CargoCapacity>
-			<RepairRate>0.3</RepairRate>
-			<AccelerationRate>0.12</AccelerationRate>
+			<Mass>300</Mass>
+			<MoveSpeed>13.6</MoveSpeed>
+			<CargoCapacity>380</CargoCapacity>
+			<RepairRate>1</RepairRate>
+			<AccelerationRate>0.11</AccelerationRate>
 		</vehicleStats>
 		
 		<soundSustainersOnEvent>
 			<li>
 				<key>(IgnitionOn, IgnitionOff)</key>
-				<value>VVE_VehicleEngineClassicCar</value>
+				<value>VVE_VehicleEngineMuscleCar</value>
 			</li>
 		</soundSustainersOnEvent>
 		
 		<properties>
-			<winterSpeedMultiplier>1.2</winterSpeedMultiplier>
+			<winterSpeedMultiplier>1.1</winterSpeedMultiplier>
+			
+			<customRoadCosts AssignDefaults = "0.75" />
 			
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 2)</li>
@@ -79,7 +81,7 @@
 			<li>
 				<key>Engine</key>
 				<label>Engine</label>
-				<health>65</health>
+				<health>70</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
 				<depth>Internal</depth>
 				
@@ -93,10 +95,6 @@
 					</li>
 				</reactors>
 				
-				<!-- <hitbox> -->
-					<!-- <side>Front</side> -->
-				<!-- </hitbox> -->
-				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
@@ -104,7 +102,7 @@
 			<li>
 				<key>FrontLeftWheel</key>
 				<label>Front Left Wheel</label>
-				<health>30</health>
+				<health>40</health>
 				<depth>External</depth>
 				
 				<armor>
@@ -130,7 +128,7 @@
 			<li>
 				<key>FrontRightWheel</key>
 				<label>Front Right Wheel</label>
-				<health>30</health>
+				<health>40</health>
 				<depth>External</depth>
 				
 				<armor>
@@ -156,7 +154,7 @@
 			<li>
 				<key>BackLeftWheel</key>
 				<label>Back Left Wheel</label>
-				<health>30</health>
+				<health>40</health>
 				<depth>External</depth>
 				
 				<armor>
@@ -182,7 +180,7 @@
 			<li>
 				<key>BackRightWheel</key>
 				<label>Back Right Wheel</label>
-				<health>30</health>
+				<health>40</health>
 				<depth>External</depth>
 				
 				<armor>
@@ -208,7 +206,7 @@
 			<li>
 				<key>FrontLeftSuspension</key>
 				<label>Front Left Suspension</label>
-				<health>20</health>
+				<health>40</health>
 				<depth>Internal</depth>
 				
 				<hitbox>
@@ -224,7 +222,7 @@
 			<li>
 				<key>FrontRightSuspension</key>
 				<label>Front Right Suspension</label>
-				<health>20</health>
+				<health>40</health>
 				<depth>Internal</depth>
 				
 				<hitbox>
@@ -240,7 +238,7 @@
 			<li>
 				<key>BackLeftSuspension</key>
 				<label>Back Left Suspension</label>
-				<health>20</health>
+				<health>40</health>
 				<depth>Internal</depth>
 				
 				<hitbox>
@@ -256,7 +254,7 @@
 			<li>
 				<key>BackRightSuspension</key>
 				<label>Back Right Suspension</label>
-				<health>20</health>
+				<health>40</health>
 				<depth>Internal</depth>
 				
 				<hitbox>
@@ -272,7 +270,7 @@
 			<li>
 				<key>Gearbox</key>
 				<label>Gearbox</label>
-				<health>45</health>
+				<health>55</health>
 				<depth>Internal</depth>
 				
 				<hitbox>
@@ -289,8 +287,13 @@
 			<li>
 				<key>LeftSidePanel</key>
 				<label>Left Side Panel</label>
-				<health>45</health>
+				<health>60</health>
 				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0.52</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+				</armor>
 				
 				<hitbox>
 					<side>Left</side>
@@ -299,17 +302,37 @@
 			<li>
 				<key>RightSidePanel</key>
 				<label>Right Side Panel</label>
-				<health>45</health>
+				<health>60</health>
 				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0.52</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+				</armor>
 				
 				<hitbox>
 					<side>Right</side>
 				</hitbox>
 			</li>
 			<li>
+				<key>FrontPanel</key>
+				<label>Front Panel Panel</label>
+				<health>60</health>
+				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0.52</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+				</armor>
+				
+				<hitbox>
+					<side>Front</side>
+				</hitbox>
+			</li>
+			<li>
 				<key>Chemtank</key>
 				<label>Chemtank</label>
-				<health>40</health>
+				<health>50</health>
 				<depth>Internal</depth>
 				
 				<reactors>
@@ -333,7 +356,7 @@
 			<li>
 				<key>FrontBumper</key>
 				<label>Front Bumper</label>
-				<health>30</health>
+				<health>50</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -343,7 +366,7 @@
 			<li>
 				<key>RearBumper</key>
 				<label>Rear Bumper</label>
-				<health>30</health>
+				<health>50</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -360,7 +383,7 @@
 			<li>
 				<key>Dashboard</key>
 				<label>Dashboard</label>
-				<health>35</health>
+				<health>30</health>
 				<depth>Internal</depth>
 				<hitWeight>2</hitWeight>
 			</li>
@@ -373,20 +396,20 @@
 			<li>
 				<key>Alternator</key>
 				<label>Alternator</label>
-				<health>20</health>
+				<health>40</health>
 				<depth>Internal</depth>
 			</li>
 			<li>
 				<key>Hood</key>
 				<label>Hood</label>
-				<health>35</health>
+				<health>80</health>
 				<depth>External</depth>
 				<hitWeight>5</hitWeight>
 			</li>
 			<li>
 				<key>Roof</key>
 				<label>Roof</label>
-				<health>45</health>
+				<health>50</health>
 				<depth>External</depth>
 				<hitWeight>5</hitWeight>
 			</li>
@@ -395,9 +418,9 @@
 		<comps>
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
-				<fuelConsumptionRate>26.5</fuelConsumptionRate>
+				<fuelConsumptionRate>24.5</fuelConsumptionRate>
 				<fuelCapacity>120</fuelCapacity>
-				<fuelConsumptionWorldMultiplier>1.0</fuelConsumptionWorldMultiplier>
+				<fuelConsumptionWorldMultiplier>0.5</fuelConsumptionWorldMultiplier>
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>

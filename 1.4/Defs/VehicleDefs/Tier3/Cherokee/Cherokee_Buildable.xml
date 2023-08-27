@@ -5,7 +5,6 @@
 		<defName>VVE_Cherokee_Blueprint</defName>
 		<label>Cherokee</label>
 		<description>A heavy duty transport aircraft, the Cherokee is a hulking monstrosity of aeronautical engineering. Very slow due to all the bulk, equally thirsty, and sports massive cargo capacity. Plan accordingly.\n\nA dedicated transport helicopter with a modified cargo bay, it requires two pilots to operate and frequent refueling. However, nothing comes even close to bulk transportation at its tech level.</description>
-		<designationCategory>VVE_Vehicles</designationCategory>
 		
 		<graphicData>
 			<texPath>Things/Vehicles/Tier3/Tier3_CargoHelicopter/Tier3_CargoHelicopter</texPath>

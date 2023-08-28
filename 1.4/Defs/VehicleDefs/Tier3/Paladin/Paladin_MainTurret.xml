@@ -38,8 +38,8 @@
 		<fireModes>
 			<li>
 				<shotsPerBurst>1</shotsPerBurst>
-				<ticksBetweenShots>30</ticksBetweenShots>
-				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<ticksBetweenShots>120</ticksBetweenShots>
+				<ticksBetweenBursts>120</ticksBetweenBursts>
 				<spreadRadius>2.9</spreadRadius>
 				<label>Single</label>
 				<texPath>UI/Gizmos/FireRate_Single</texPath>

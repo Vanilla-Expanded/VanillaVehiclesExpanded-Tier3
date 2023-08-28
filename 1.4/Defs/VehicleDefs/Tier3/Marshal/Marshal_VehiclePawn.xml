@@ -393,9 +393,9 @@
 						<turretDef>Marshal_MainTurret</turretDef>
 						
 						<renderProperties>
-							<north>(0, 0)</north>
-							<south>(0, 0)</south>
-							<east>(0, 0)</east>
+							<north>(0, 0.7)</north>
+							<south>(0, -0.05)</south>
+							<east>(0.28, 0.36)</east>
 						</renderProperties>
 						
 						<gizmoLabel>Main Turret</gizmoLabel>

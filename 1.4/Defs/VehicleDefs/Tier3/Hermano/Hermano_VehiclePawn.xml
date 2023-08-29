@@ -2,23 +2,23 @@
 
 <Defs>
 	<Vehicles.VehicleDef ParentName="VehiclePawn_Mechanical">
-		<defName>VVE_Nomad</defName>
-		<label>Nomad</label>
-		<description>An armoured all-rounder vehicle, the Nomad performs remarkably well in all categories with an excellent cargo and passenger capacity. Performs well in any and all terrain, with some minor issues in the cold.\n\nA relatively general purpose tier 3, effectively being a lightly armoured APC. While it excels in off road capabilities and works well in all situations, other vehicles perform even better on roads or in specialized tasks.</description>
+		<defName>VVE_Hermano</defName>
+		<label>Hermano</label>
+		<description>A dedicated refrigeration vehicle, the Hermano is a decent cargo transporter with a specific niche in ferrying perishable goods. Decent in long-range travel along roads, it performs terribly in off-road or winter conditions.\n\nWhile there are better cargo transporters even in lower tiers, this truck can transport cargo in a frozen state, preventing spoilage. Due to the extra machinery, performance suffers and it should stay away from conflict zones.</description>
 		
 		<graphicData>
-			<texPath>Things/Vehicles/Tier3/Tier3_OffroadJeep/Tier3_OffroadJeep</texPath>
+			<texPath>Things/Vehicles/Tier3/Tier3_RefrigeratedTruck/Tier3_RefrigeratedTruck</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>(3, 5)</drawSize>
+			<drawSize>(4, 7)</drawSize>
 			<color>(75, 75, 75)</color>
 		</graphicData>
 		
-		<fillPercent>0.8</fillPercent>
+		<fillPercent>1</fillPercent>
 		
-		<buildDef>VVE_Nomad_Blueprint</buildDef>
+		<buildDef>VVE_BigRig_Blueprint</buildDef>
 		
-		<size>(2, 4)</size>
+		<size>(2, 5)</size>
 		
 		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
 		<vehicleCategory>Transport</vehicleCategory>
@@ -26,19 +26,19 @@
 		<vehicleType>Land</vehicleType>
 		
 		<statBases>
-			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.42</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
-			<MarketValue>2560</MarketValue>
+			<MarketValue>2630</MarketValue>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		
 		<vehicleStats>
-			<Mass>300</Mass>
-			<MoveSpeed>13.6</MoveSpeed>
-			<CargoCapacity>380</CargoCapacity>
-			<RepairRate>1</RepairRate>
-			<AccelerationRate>0.11</AccelerationRate>
+			<Mass>320</Mass>
+			<MoveSpeed>11.8</MoveSpeed>
+			<CargoCapacity>800</CargoCapacity>
+			<RepairRate>0.45</RepairRate>
+			<AccelerationRate>0.04</AccelerationRate>
 		</vehicleStats>
 		
 		<soundSustainersOnEvent>
@@ -49,15 +49,10 @@
 		</soundSustainersOnEvent>
 		
 		<properties>
-			<winterSpeedMultiplier>1.1</winterSpeedMultiplier>
+			<worldSpeedMultiplier>1.2</worldSpeedMultiplier>
+			<winterSpeedMultiplier>1.5</winterSpeedMultiplier>
 			
 			<customRoadCosts AssignDefaults = "0.75" />
-			
-			<customHillinessCosts>
-				<SmallHills>0.5</SmallHills>
-				<LargeHills>0.75</LargeHills>
-				<Mountainous>1.5</Mountainous>
-			</customHillinessCosts>
 			
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 2)</li>
@@ -78,7 +73,7 @@
 				<li>
 					<key>passenger</key>
 					<label>Passenger</label>
-					<slots>3</slots>
+					<slots>1</slots>
 				</li>
 			</roles>
 		</properties>
@@ -87,7 +82,7 @@
 			<li>
 				<key>Engine</key>
 				<label>Engine</label>
-				<health>70</health>
+				<health>75</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
 				<depth>Internal</depth>
 				
@@ -101,6 +96,13 @@
 					</li>
 				</reactors>
 				
+				<hitbox>
+					<cells>
+						<li>(0, 2)</li>
+						<li>(1, 2)</li>
+					</cells>
+				</hitbox>
+				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
@@ -108,7 +110,7 @@
 			<li>
 				<key>FrontLeftWheel</key>
 				<label>Front Left Wheel</label>
-				<health>40</health>
+				<health>35</health>
 				<depth>External</depth>
 				
 				<armor>
@@ -134,7 +136,7 @@
 			<li>
 				<key>FrontRightWheel</key>
 				<label>Front Right Wheel</label>
-				<health>40</health>
+				<health>35</health>
 				<depth>External</depth>
 				
 				<armor>
@@ -160,7 +162,7 @@
 			<li>
 				<key>BackLeftWheel</key>
 				<label>Back Left Wheel</label>
-				<health>40</health>
+				<health>35</health>
 				<depth>External</depth>
 				
 				<armor>
@@ -175,7 +177,7 @@
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
-						<li>(0, -1)</li>
+						<li>(0, -2)</li>
 					</cells>
 				</hitbox>
 				
@@ -186,7 +188,7 @@
 			<li>
 				<key>BackRightWheel</key>
 				<label>Back Right Wheel</label>
-				<health>40</health>
+				<health>35</health>
 				<depth>External</depth>
 				
 				<armor>
@@ -201,7 +203,7 @@
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
-						<li>(1, -1)</li>
+						<li>(1, -2)</li>
 					</cells>
 				</hitbox>
 				
@@ -249,7 +251,7 @@
 				
 				<hitbox>
 					<cells>
-						<li>(0, -1)</li>
+						<li>(0, -2)</li>
 					</cells>
 				</hitbox>
 				
@@ -265,7 +267,7 @@
 				
 				<hitbox>
 					<cells>
-						<li>(1, -1)</li>
+						<li>(1, -2)</li>
 					</cells>
 				</hitbox>
 				
@@ -276,13 +278,13 @@
 			<li>
 				<key>Gearbox</key>
 				<label>Gearbox</label>
-				<health>55</health>
+				<health>40</health>
 				<depth>Internal</depth>
 				
 				<hitbox>
 					<cells>
-						<li>(0, 1)</li>
-						<li>(1, 1)</li>
+						<li>(0, 2)</li>
+						<li>(1, 2)</li>
 					</cells>
 				</hitbox>
 				
@@ -293,13 +295,8 @@
 			<li>
 				<key>LeftSidePanel</key>
 				<label>Left Side Panel</label>
-				<health>60</health>
+				<health>80</health>
 				<depth>External</depth>
-				
-				<armor>
-					<ArmorRating_Blunt>0.52</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-				</armor>
 				
 				<hitbox>
 					<side>Left</side>
@@ -308,37 +305,17 @@
 			<li>
 				<key>RightSidePanel</key>
 				<label>Right Side Panel</label>
-				<health>60</health>
+				<health>80</health>
 				<depth>External</depth>
-				
-				<armor>
-					<ArmorRating_Blunt>0.52</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-				</armor>
 				
 				<hitbox>
 					<side>Right</side>
 				</hitbox>
 			</li>
 			<li>
-				<key>FrontPanel</key>
-				<label>Front Panel Panel</label>
-				<health>60</health>
-				<depth>External</depth>
-				
-				<armor>
-					<ArmorRating_Blunt>0.52</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-				</armor>
-				
-				<hitbox>
-					<side>Front</side>
-				</hitbox>
-			</li>
-			<li>
 				<key>Chemtank</key>
-				<label>Chemtank</label>
-				<health>50</health>
+				<label>Left Chemtank</label>
+				<health>80</health>
 				<depth>Internal</depth>
 				
 				<reactors>
@@ -362,7 +339,7 @@
 			<li>
 				<key>FrontBumper</key>
 				<label>Front Bumper</label>
-				<health>50</health>
+				<health>45</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -372,7 +349,7 @@
 			<li>
 				<key>RearBumper</key>
 				<label>Rear Bumper</label>
-				<health>50</health>
+				<health>30</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -382,40 +359,40 @@
 			<li>
 				<key>Upholstery</key>
 				<label>Upholstery</label>
-				<health>30</health>
+				<health>35</health>
 				<depth>Internal</depth>
 				<hitWeight>5</hitWeight>
 			</li>
 			<li>
 				<key>Dashboard</key>
 				<label>Dashboard</label>
-				<health>30</health>
+				<health>35</health>
 				<depth>Internal</depth>
 				<hitWeight>2</hitWeight>
 			</li>
 			<li>
 				<key>SteeringWheel</key>
 				<label>Steering Wheel</label>
-				<health>20</health>
+				<health>30</health>
 				<depth>Internal</depth>
 			</li>
 			<li>
 				<key>Alternator</key>
 				<label>Alternator</label>
-				<health>40</health>
+				<health>30</health>
 				<depth>Internal</depth>
 			</li>
 			<li>
-				<key>Hood</key>
-				<label>Hood</label>
-				<health>80</health>
+				<key>Grill</key>
+				<label>Grill</label>
+				<health>50</health>
 				<depth>External</depth>
 				<hitWeight>5</hitWeight>
 			</li>
 			<li>
 				<key>Roof</key>
 				<label>Roof</label>
-				<health>50</health>
+				<health>40</health>
 				<depth>External</depth>
 				<hitWeight>5</hitWeight>
 			</li>
@@ -425,9 +402,9 @@
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
 				<leakDef>Filth_Fuel</leakDef>
-				<fuelConsumptionRate>24.5</fuelConsumptionRate>
-				<fuelCapacity>120</fuelCapacity>
-				<fuelConsumptionWorldMultiplier>0.5</fuelConsumptionWorldMultiplier>
+				<fuelConsumptionRate>28</fuelConsumptionRate>
+				<fuelCapacity>92</fuelCapacity>
+				<fuelConsumptionWorldMultiplier>0.8333</fuelConsumptionWorldMultiplier>
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>

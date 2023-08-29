@@ -57,7 +57,7 @@
 		<graphicData>
 			<texPath>Things/Vehicles/Tier3/Tier3_LAV/Tier3_LAV_CannonTop</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
-			<shaderType>CutoutComplexPattern</shaderType>
+			<shaderType>Cutout</shaderType>
 			<drawSize>(2, 2)</drawSize>
 		</graphicData>
 		

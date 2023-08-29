@@ -7,8 +7,9 @@
 		<thingClass>Projectile_Explosive</thingClass>
 		
 		<graphicData>
-			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<texPath>Projectiles/Marshal_Shot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4, 4)</drawSize>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		

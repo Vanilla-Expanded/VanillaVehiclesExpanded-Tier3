@@ -22,7 +22,6 @@
 		
 		<projectileOffset>1</projectileOffset>
 		
-		<minRange>1</minRange>
 		<maxRange>24.9</maxRange>
 		
 		<recoil>

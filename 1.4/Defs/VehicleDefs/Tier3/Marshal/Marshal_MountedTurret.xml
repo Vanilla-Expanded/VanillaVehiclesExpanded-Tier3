@@ -38,8 +38,8 @@
 				<ticksBetweenShots>12</ticksBetweenShots>
 				<ticksBetweenBursts>60</ticksBetweenBursts>
 				<burstsTillWarmup>3</burstsTillWarmup>
-				<label>Single</label>
-				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
 			</li>
 		</fireModes>
 

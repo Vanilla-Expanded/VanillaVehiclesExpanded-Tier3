@@ -10,13 +10,10 @@
       <texPath>Things/Wrecks/Wreck_T3ClassicCar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,5)</drawSize>
-      <shadowData>
-        <volume>(1.4, 0.66, 3.1)</volume>
-      </shadowData>
     </graphicData>
     <size>(2,4)</size>
     <fillPercent>0.5</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <statBases>
@@ -37,13 +34,10 @@
       <texPath>Things/Wrecks/Wreck_T3Supercar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(5,3)</drawSize>
-      <shadowData>
-        <volume>(3.4, 0.66, 1.1)</volume>
-      </shadowData>
     </graphicData>
     <size>(4,2)</size>
     <fillPercent>0.5</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <statBases>
@@ -63,14 +57,11 @@
     <graphicData>
       <texPath>Things/Wrecks/Wreck_T3Tank</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(7,4)</drawSize>
-      <shadowData>
-        <volume>(5.4, 0.66, 2.1)</volume>
-      </shadowData>
+      <drawSize>(7.5,4.5)</drawSize>
     </graphicData>
     <size>(6,3)</size>
     <fillPercent>0.5</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <statBases>
@@ -90,14 +81,11 @@
     <graphicData>
       <texPath>Things/Wrecks/Wreck_T3LAV</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(7,4)</drawSize>
-      <shadowData>
-        <volume>(5.4, 0.66, 2.1)</volume>
-      </shadowData>
+      <drawSize>(7.5,4.5)</drawSize>
     </graphicData>
     <size>(6,3)</size>
     <fillPercent>0.5</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <statBases>
@@ -117,14 +105,11 @@
     <graphicData>
       <texPath>Things/Wrecks/Wreck_T3OffroadJeep</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(5,3)</drawSize>
-      <shadowData>
-        <volume>(3.4, 0.66, 1.1)</volume>
-      </shadowData>
+      <drawSize>(5.5,3.5)</drawSize>
     </graphicData>
     <size>(4,2)</size>
     <fillPercent>0.5</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <statBases>
@@ -144,14 +129,11 @@
     <graphicData>
       <texPath>Things/Wrecks/Wreck_T3Helicopter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(4,8)</drawSize>
-      <shadowData>
-        <volume>(2.4, 0.66, 6.1)</volume>
-      </shadowData>
+      <drawSize>(4.5,8.5)</drawSize>
     </graphicData>
     <size>(3,7)</size>
     <fillPercent>0.5</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <statBases>
@@ -171,14 +153,11 @@
     <graphicData>
       <texPath>Things/Wrecks/Wreck_T3Truck</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(7,4)</drawSize>
-      <shadowData>
-        <volume>(5.4, 0.66, 2.1)</volume>
-      </shadowData>
+      <drawSize>(7.5,4.5)</drawSize>
     </graphicData>
     <size>(6,3)</size>
     <fillPercent>0.5</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <statBases>
@@ -199,13 +178,10 @@
       <texPath>Things/Wrecks/Wreck_T3Artillery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,5)</drawSize>
-      <shadowData>
-        <volume>(2.4, 0.66, 3.1)</volume>
-      </shadowData>
     </graphicData>
     <size>(3,4)</size>
     <fillPercent>0.5</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <statBases>
@@ -225,14 +201,11 @@
     <graphicData>
       <texPath>Things/Wrecks/Wreck_T3CargoHelicopter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(11,4)</drawSize>
-      <shadowData>
-        <volume>(9.4, 0.66, 2.1)</volume>
-      </shadowData>
+      <drawSize>(11.5,4.5)</drawSize>
     </graphicData>
     <size>(10,3)</size>
     <fillPercent>0.5</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <statBases>
@@ -252,14 +225,11 @@
     <graphicData>
       <texPath>Things/Wrecks/Wreck_T3RefrigeratedTruck</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(6,3)</drawSize>
-      <shadowData>
-        <volume>(4.4, 0.66, 1.1)</volume>
-      </shadowData>
+      <drawSize>(6.5,3.5)</drawSize>
     </graphicData>
     <size>(5,2)</size>
     <fillPercent>0.5</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <statBases>

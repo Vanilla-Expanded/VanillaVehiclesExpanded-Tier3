@@ -11,7 +11,7 @@
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(3, 5)</drawSize>
-			<color>(75, 75, 75)</color>
+			<color>(216, 154, 115)</color>
 		</graphicData>
 		
 		<fillPercent>0.8</fillPercent>

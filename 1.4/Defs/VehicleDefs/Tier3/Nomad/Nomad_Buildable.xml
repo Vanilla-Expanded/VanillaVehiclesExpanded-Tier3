@@ -18,6 +18,10 @@
 			<Flammability>0.5</Flammability>
 		</statBases>
 		
+		<researchPrerequisites>
+			<li>VVE_OffroadJeeps</li>
+		</researchPrerequisites>
+		
 		<size>(2, 4)</size>
 		
 		<costList>

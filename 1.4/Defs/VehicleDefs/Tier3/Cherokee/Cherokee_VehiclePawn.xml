@@ -48,15 +48,15 @@
 			</li>
 			<li>
 				<key>(AerialVehicleLaunch, AerialVehicleLeftMap)</key>
-				<value>VVE_VehicleDualRotorHelicoper</value>
+				<value>VVE_VehicleDualRotorHelicopter</value>
 			</li>
 			<li>
 				<key>(AerialVehicleLanding, Spawned)</key>
-				<value>VVE_VehicleDualRotorHelicoper</value>
+				<value>VVE_VehicleDualRotorHelicopter</value>
 			</li>
 			<li>
 				<key>(AerialVehicleCrashLanding, Spawned)</key>
-				<value>VVE_VehicleEngineHeavy</value>
+				<value>VVE_VehicleDualRotorHelicopter</value>
 			</li>
 		</soundSustainersOnEvent>
 		

@@ -12,6 +12,10 @@
 			<drawSize>(5,12)</drawSize>
 		</graphicData>
 		
+		<researchPrerequisites>
+			<li>VVE_Cherokee</li>
+		</researchPrerequisites>
+		
 		<size>(3,10)</size>
 		
 		<statBases>

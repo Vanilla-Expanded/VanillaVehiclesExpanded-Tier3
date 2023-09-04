@@ -18,6 +18,10 @@
 			<Flammability>0.5</Flammability>
 		</statBases>
 		
+		<researchPrerequisites>
+			<li>VVE_BigRigs</li>
+		</researchPrerequisites>
+		
 		<size>(3, 6)</size>
 		
 		<costList>

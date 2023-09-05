@@ -23,6 +23,12 @@
     <killedLeavings>
       <ChunkSlagSteel>2</ChunkSlagSteel>
     </killedLeavings>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>VVE_Springbok</vehicleDef>
+			<researchDef>VVE_ClassicCars</researchDef>
+		</li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">

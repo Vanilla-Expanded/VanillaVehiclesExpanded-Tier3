@@ -23,6 +23,7 @@
     <killedLeavings>
       <ChunkSlagSteel>2</ChunkSlagSteel>
     </killedLeavings>
+    <defaultPlacingRot>South</defaultPlacingRot>
 	<comps>
 		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
 			<vehicleDef>VVE_Springbok</vehicleDef>
@@ -53,6 +54,13 @@
     <killedLeavings>
       <ChunkSlagSteel>2</ChunkSlagSteel>
     </killedLeavings>
+    <defaultPlacingRot>West</defaultPlacingRot>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>VVE_Lightning</vehicleDef>
+			<researchDef>VVE_SuperCars</researchDef>
+		</li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
@@ -77,6 +85,13 @@
     <killedLeavings>
       <ChunkSlagSteel>6</ChunkSlagSteel>
     </killedLeavings>
+    <defaultPlacingRot>East</defaultPlacingRot>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>VVE_Marshal</vehicleDef>
+			<researchDef>VVE_BattleTanks</researchDef>
+		</li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
@@ -101,6 +116,13 @@
     <killedLeavings>
       <ChunkSlagSteel>6</ChunkSlagSteel>
     </killedLeavings>
+    <defaultPlacingRot>West</defaultPlacingRot>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>VVE_Paladin</vehicleDef>
+			<researchDef>VVE_LightArmoredVehicles</researchDef>
+		</li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
@@ -125,6 +147,13 @@
     <killedLeavings>
       <ChunkSlagSteel>4</ChunkSlagSteel>
     </killedLeavings>
+    <defaultPlacingRot>East</defaultPlacingRot>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>VVE_Nomad</vehicleDef>
+			<researchDef>VVE_OffroadJeeps</researchDef>
+		</li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
@@ -149,6 +178,13 @@
     <killedLeavings>
       <ChunkSlagSteel>12</ChunkSlagSteel>
     </killedLeavings>
+    <defaultPlacingRot>South</defaultPlacingRot>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>VVE_Louie</vehicleDef>
+			<researchDef>VVE_Louie</researchDef>
+		</li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
@@ -173,6 +209,13 @@
     <killedLeavings>
       <ChunkSlagSteel>5</ChunkSlagSteel>
     </killedLeavings>
+    <defaultPlacingRot>East</defaultPlacingRot>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>VVE_BigRig</vehicleDef>
+			<researchDef>VVE_BigRigs</researchDef>
+		</li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
@@ -197,6 +240,13 @@
     <killedLeavings>
       <ChunkSlagSteel>4</ChunkSlagSteel>
     </killedLeavings>
+    <defaultPlacingRot>North</defaultPlacingRot>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>VVE_Udar</vehicleDef>
+			<researchDef>VVE_SelfpropelledArtillery</researchDef>
+		</li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
@@ -221,6 +271,13 @@
     <killedLeavings>
       <ChunkSlagSteel>16</ChunkSlagSteel>
     </killedLeavings>
+    <defaultPlacingRot>East</defaultPlacingRot>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>VVE_Cherokee</vehicleDef>
+			<researchDef>VVE_Cherokee</researchDef>
+		</li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
@@ -245,6 +302,13 @@
     <killedLeavings>
       <ChunkSlagSteel>5</ChunkSlagSteel>
     </killedLeavings>
+    <defaultPlacingRot>East</defaultPlacingRot>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>VVE_BigRig</vehicleDef>
+			<researchDef>VVE_BigRigs</researchDef>
+		</li>
+	</comps>
   </ThingDef>
 
 </Defs>

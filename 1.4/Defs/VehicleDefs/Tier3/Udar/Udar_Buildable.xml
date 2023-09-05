@@ -20,6 +20,10 @@
 		
 		<size>(3, 4)</size>
 		
+		<researchPrerequisites>
+			<li>VVE_SelfpropelledArtillery</li>
+		</researchPrerequisites>
+		
 		<costList>
 			<VVE_EngineBlock>3</VVE_EngineBlock>
 			<VVE_CarAlternator>2</VVE_CarAlternator>

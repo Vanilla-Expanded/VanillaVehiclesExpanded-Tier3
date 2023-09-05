@@ -89,10 +89,10 @@
 				<reactors>
 					<li Class = "Vehicles.Reactor_Explosive">
 						<indicator>VF_Explosive</indicator>
-						<chance>0.35</chance>
-						<maxHealth>0.3</maxHealth>
+						<chance>0.25</chance>
+						<maxHealth>0.2</maxHealth>
 						<radius>3</radius>
-						<damageDef>Bomb</damageDef>
+						<damageDef>Flame</damageDef>
 					</li>
 				</reactors>
 				

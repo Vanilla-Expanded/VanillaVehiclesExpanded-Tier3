@@ -86,16 +86,12 @@
 				<reactors>
 					<li Class = "Vehicles.Reactor_Explosive">
 						<indicator>VF_Explosive</indicator>
-						<chance>0.35</chance>
-						<maxHealth>0.3</maxHealth>
+						<chance>0.25</chance>
+						<maxHealth>0.2</maxHealth>
 						<radius>3</radius>
-						<damageDef>Bomb</damageDef>
+						<damageDef>Flame</damageDef>
 					</li>
 				</reactors>
-				
-				<!-- <hitbox> -->
-					<!-- <side>Front</side> -->
-				<!-- </hitbox> -->
 				
 				<categories>
 					<li>MoveSpeed</li>
@@ -316,10 +312,10 @@
 					<li Class = "Vehicles.Reactor_FuelLeak"/>
 					<li Class = "Vehicles.Reactor_Explosive">
 						<indicator>VF_Explosive</indicator>
-						<chance>0.5</chance>
-						<maxHealth>0.3</maxHealth>
+						<chance>0.25</chance>
+						<maxHealth>0.2</maxHealth>
 						<radius>3</radius>
-						<damageDef>Bomb</damageDef>
+						<damageDef>Flame</damageDef>
 					</li>
 				</reactors>
 				

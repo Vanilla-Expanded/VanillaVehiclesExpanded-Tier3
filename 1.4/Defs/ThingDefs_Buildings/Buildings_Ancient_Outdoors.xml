@@ -302,7 +302,6 @@
     <killedLeavings>
       <ChunkSlagSteel>5</ChunkSlagSteel>
     </killedLeavings>
-    <defaultPlacingRot>East</defaultPlacingRot>
 	<comps>
 		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
 			<vehicleDef>VVE_BigRig</vehicleDef>

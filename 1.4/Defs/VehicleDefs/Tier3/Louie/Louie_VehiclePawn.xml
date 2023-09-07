@@ -30,14 +30,14 @@
 			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
-			<MarketValue>4960</MarketValue>
+			<MarketValue>7230</MarketValue>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		
 		<vehicleStats>
 			<Mass>780</Mass>
 			<MoveSpeed LockSetting = "True">0</MoveSpeed>
-			<CargoCapacity>1200</CargoCapacity>
+			<CargoCapacity>780</CargoCapacity>
 			<RepairRate>1</RepairRate>
 			<FlightSpeed>9.95</FlightSpeed>
 		</vehicleStats>

@@ -32,6 +32,11 @@
 			<VVE_CarWheel>4</VVE_CarWheel>
 			<Steel>1080</Steel>
 			<ComponentIndustrial>36</ComponentIndustrial>
+			<VVE_CarFuelTank>4</VVE_CarFuelTank>
+			<VVE_CarTransmission>6</VVE_CarTransmission>
+			<VVE_CarRadiator>2</VVE_CarRadiator>
+			<VVE_CarWiring>6</VVE_CarWiring>
+			<VVE_CarBattery>4</VVE_CarBattery>
 		</costList>
 		
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>

@@ -11,6 +11,12 @@
 		<reloadSound>VVE_MortarReloadSound</reloadSound>
 		
 		<reloadTimer>28.8</reloadTimer>
+		<reloadTimerMultiplierPerCrewCount>
+			<points>
+				<li>(1, 1)</li>
+				<li>(2, 0.5)</li>
+			</points>
+		</reloadTimerMultiplierPerCrewCount>
 		<warmUpTimer>4</warmUpTimer>
 		
 		<autoSnapTargeting>false</autoSnapTargeting>

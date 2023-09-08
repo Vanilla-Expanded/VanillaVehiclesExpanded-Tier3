@@ -304,7 +304,7 @@
     </killedLeavings>
 	<comps>
 		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
-			<vehicleDef>VVE_BigRig</vehicleDef>
+			<vehicleDef>VVE_Hermano</vehicleDef>
 			<researchDef>VVE_BigRigs</researchDef>
 			<spawnRotation>East</spawnRotation>
 		</li>

@@ -11,7 +11,7 @@ namespace VanillaVehiclesExpanded_Tier3
     {
         public static void Postfix(VehiclePawn __instance, Pawn pawn)
         {
-            if (__instance.VehicleDef == VVETier3_DefOf.VVE_Lightning && pawn.needs?.mood?.thoughts?.memories != null)
+            if (__instance.VehicleDef == VVETier3_DefOf.VVE_Springbok && pawn.needs?.mood?.thoughts?.memories != null)
             {
                 var tracker = pawn.GetVehicleTracker(__instance.VehicleDef);
                 int spentTime = tracker.disembarkedFromTicks - tracker.boardedToTicks;

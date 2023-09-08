@@ -11,7 +11,7 @@ namespace VanillaVehiclesExpanded_Tier3
     [DefOf]
     public static class VVETier3_DefOf
     {
-        public static VehicleDef VVE_Lightning, VVE_Hermano;
+        public static VehicleDef VVE_Springbok, VVE_Hermano;
         public static ThoughtDef VVE_FeelingClassy;
     }
 }

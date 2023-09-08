@@ -12,6 +12,7 @@
 		<projectile>Bullet_MiniTurret</projectile>
 		<reloadTimer>2.4</reloadTimer>
 		<warmUpTimer>1.2</warmUpTimer>
+		<chargePerAmmoCount>0.25</chargePerAmmoCount>
 		
 		<magazineCapacity>75</magazineCapacity>
 		<genericAmmo>true</genericAmmo>
@@ -22,7 +23,7 @@
 		
 		<projectileOffset>1</projectileOffset>
 		
-		<maxRange>24.9</maxRange>
+		<maxRange>28.9</maxRange>
 		
 		<recoil>
 			<distanceTotal>0.15</distanceTotal>
@@ -34,9 +35,9 @@
 		
 		<fireModes>
 			<li>
-				<shotsPerBurst>2</shotsPerBurst>
-				<ticksBetweenShots>12</ticksBetweenShots>
-				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<shotsPerBurst>4</shotsPerBurst>
+				<ticksBetweenShots>8</ticksBetweenShots>
+				<ticksBetweenBursts>120</ticksBetweenBursts>
 				<burstsTillWarmup>3</burstsTillWarmup>
 				<label>Burst</label>
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>

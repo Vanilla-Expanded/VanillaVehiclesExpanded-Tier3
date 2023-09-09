@@ -11,7 +11,7 @@ namespace VanillaVehiclesExpanded_Tier3
         public static bool Prefix(Thing t)
         {
             if (t.ParentHolder is Pawn_InventoryTracker tracker
-                && tracker.pawn is VehiclePawn vehicle && vehicle.def == VVETier3_DefOf.VVE_Hermano
+                && tracker.pawn is VehiclePawn vehicle && vehicle.Drafted && vehicle.def == VVETier3_DefOf.VVE_Hermano
                 && vehicle.CompFueledTravel.Fuel > 0)
             {
                 return false;

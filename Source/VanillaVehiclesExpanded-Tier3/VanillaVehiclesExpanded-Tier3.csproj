@@ -49,10 +49,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompRottable_Active_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="SteadyEnvironmentEffects_TryDoDeteriorate_Patch.cs" />
     <Compile Include="ThoughtWorker_FeelingClassyInCar.cs" />
     <Compile Include="VehiclePawn_DisembarkPawn_Pawn.cs" />
     <Compile Include="VVETier3_DefOf.cs" />

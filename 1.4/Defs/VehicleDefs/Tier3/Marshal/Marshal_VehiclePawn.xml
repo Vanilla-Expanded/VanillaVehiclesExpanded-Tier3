@@ -446,6 +446,9 @@
 						<onlyManualCast>True</onlyManualCast>
 					</li>
 				</verbs>
+				<commandDescriptions>
+					<li>A defensive smokescreen. When activated, it will release a cloud of smoke, obscuring incoming shots and preventing turrets from locking on. Has three charges and will require a chemfuel reload after they are spent.</li>
+				</commandDescriptions>
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>

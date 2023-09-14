@@ -440,6 +440,7 @@
 						<label>pop smoke</label>
 						<violent>false</violent>
 						<hasStandardCommand>true</hasStandardCommand>
+						<commandIcon>UI/ActivateBlindsmokePop</commandIcon>
 						<targetable>false</targetable>
 						<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
 						<onlyManualCast>True</onlyManualCast>

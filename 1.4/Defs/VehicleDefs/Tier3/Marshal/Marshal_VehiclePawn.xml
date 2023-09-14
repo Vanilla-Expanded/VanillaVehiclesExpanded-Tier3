@@ -33,6 +33,7 @@
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
 			<Flammability>0.5</Flammability>
 			<MarketValue>6635</MarketValue>
+			<SmokepopBeltRadius>6.9</SmokepopBeltRadius>
 		</statBases>
 		
 		<vehicleStats>
@@ -424,6 +425,26 @@
 						<parentKey>mainTurret</parentKey>
 					</li>
 				</turrets>
+			</li>
+			<li Class="VanillaVehiclesExpanded.CompProperties_ReloadableWithVerbs">
+				<maxCharges>3</maxCharges>
+				<ammoDef>Chemfuel</ammoDef>
+				<ammoCountToRefill>10</ammoCountToRefill>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>smokepop</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<verbs>
+					<li>
+						<verbClass>Verb_Smokepop</verbClass>
+						<label>pop smoke</label>
+						<violent>false</violent>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+						<onlyManualCast>True</onlyManualCast>
+					</li>
+				</verbs>
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>

@@ -46,7 +46,7 @@
   <ResearchProjectDef>
     <defName>VVE_LightArmoredVehicles</defName>
     <label>light armored vehicles</label>
-    <description>Learn to build light armored vehicles such as the paladin, that can transport soldiers efficiently and effectively whilst providing them with fire support. In order to research this project, a paladin wreck needs to be found and restored.</description>
+    <description>Learn to build light armored vehicles such as the paladin or the badger, that can transport soldiers efficiently and effectively whilst providing them with fire support. In order to research this project, a paladin or badger wreck needs to be found and restored.</description>
     <baseCost>4000</baseCost>
     <techLevel>Industrial</techLevel>
 	<prerequisites>

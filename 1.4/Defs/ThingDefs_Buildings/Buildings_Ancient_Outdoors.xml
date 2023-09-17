@@ -317,7 +317,7 @@
     <description>An ancient, broken infantry fighting vehicle. Everything that isn't rusted away was looted long ago. Given enough resources, it can be restored into a Badger.</description>
     <rotatable>false</rotatable>
     <graphicData>
-      <texPath>Things/Wrecks/Wreck_T3ClassicCar</texPath>
+      <texPath>Things/Wrecks/Wreck_T3IFV</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,6)</drawSize>
     </graphicData>

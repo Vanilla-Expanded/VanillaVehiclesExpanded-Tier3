@@ -3,12 +3,12 @@
 <Defs>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_Badger_MainTurret</defName>
-		<label>high-explosive shell</label>
+		<label>anti-infantry shell</label>
 		
 		<thingClass>Projectile_Explosive</thingClass>
 		
 		<graphicData>
-			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
@@ -20,7 +20,7 @@
 			<speed>96</speed>
 			<explosionRadius>1.9</explosionRadius>
 			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundExplode>Explosion_Rocket</soundExplode>
 			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
 		</projectile>
@@ -70,8 +70,8 @@
 			</li>
 			<li>
 				<shotsPerBurst>5</shotsPerBurst>
-				<ticksBetweenShots>22</ticksBetweenShots>
-				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<ticksBetweenShots>16</ticksBetweenShots>
+				<ticksBetweenBursts>120</ticksBetweenBursts>
 				<spreadRadius>2.9</spreadRadius>
 				<label>Burst</label>
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>

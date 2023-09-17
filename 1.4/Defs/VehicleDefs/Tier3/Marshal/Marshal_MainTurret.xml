@@ -15,7 +15,7 @@
 		
 		<projectile>
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>44</damageAmountBase>
+			<damageAmountBase>54</damageAmountBase>
 			<speed>162</speed>
 			<explosionRadius>5.9</explosionRadius>
 			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
@@ -50,7 +50,7 @@
 		<projectileOffset>4.15</projectileOffset>
 		
 		<minRange>4</minRange>
-		<maxRange>54.9</maxRange>
+		<maxRange>64.9</maxRange>
 		
 		<recoil>
 			<distanceTotal>0.7</distanceTotal>

@@ -29,7 +29,7 @@
 			<ArmorRating_Blunt>0.27</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.42</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
-			<MarketValue>2630</MarketValue>
+			<MarketValue>3870</MarketValue>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		
@@ -405,6 +405,12 @@
 				<fuelConsumptionRate>28</fuelConsumptionRate>
 				<fuelCapacity>92</fuelCapacity>
 				<fuelConsumptionWorldMultiplier>0.8333</fuelConsumptionWorldMultiplier>
+			</li>
+			<li Class="VanillaVehiclesExpanded.CompProperties_Refrigerator">
+				<label>Cargo refrigeration</label>
+				<description>Enable or disable cargo refrigeration on this refrigerated truck. Refrigeration will stop items from spoiling, but will continuously use up fuel.</description>
+				<fuelConsumptionPerDay>12</fuelConsumptionPerDay>
+				<iconPath>UI/HermanoRefrigeration</iconPath>
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>

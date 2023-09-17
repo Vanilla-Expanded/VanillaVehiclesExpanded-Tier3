@@ -4,7 +4,7 @@
 	<Vehicles.VehicleDef ParentName="VehiclePawn_Armored">
 		<defName>VVE_Marshal</defName>
 		<label>Marshal</label>
-		<description>A general main battle tank, the Marshal is an improved combat vehicle that performs well in any engagement. Performs better in less favourable terrain with all sides armoured, the thinnest plating being at the rear near the engine.\n\nMinimal armour improvements compared to previous tier tanks, instead it has a more powerful main gun and a secondary gun. Can fire while moving, as it requires one driver and two gunners for each weapon system.</description>
+		<description>A general main battle tank, the Marshal is an improved combat vehicle that performs well in any engagement. Performs better in less favourable terrain with all sides armoured, the thinnest plating being at the rear near the engine.\n\nMinimal armour improvements compared to previous tier tanks, instead it has a more powerful main gun and a secondary gun. Can fire while moving, as it requires one driver and two gunners; one for each weapon system.</description>
 		
 		<graphicData>
 			<texPath>Things/Vehicles/Tier3/Tier3_ModernArmor/Tier3_ModernArmor</texPath>
@@ -32,7 +32,8 @@
 			<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
 			<Flammability>0.5</Flammability>
-			<MarketValue>4800</MarketValue>
+			<MarketValue>6635</MarketValue>
+			<SmokepopBeltRadius>6.9</SmokepopBeltRadius>
 		</statBases>
 		
 		<vehicleStats>
@@ -424,6 +425,30 @@
 						<parentKey>mainTurret</parentKey>
 					</li>
 				</turrets>
+			</li>
+			<li Class="VanillaVehiclesExpanded.CompProperties_ReloadableWithVerbs">
+				<maxCharges>3</maxCharges>
+				<ammoDef>Chemfuel</ammoDef>
+				<ammoCountToRefill>10</ammoCountToRefill>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>smokepop</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<verbs>
+					<li>
+						<verbClass>Verb_Smokepop</verbClass>
+						<label>pop smoke</label>
+						<violent>false</violent>
+						<hasStandardCommand>true</hasStandardCommand>
+						<commandIcon>UI/ActivateBlindsmokePop</commandIcon>
+						<targetable>false</targetable>
+						<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+						<onlyManualCast>True</onlyManualCast>
+					</li>
+				</verbs>
+				<commandDescriptions>
+					<li>A defensive smokescreen. When activated, it will release a cloud of smoke, obscuring incoming shots and preventing turrets from locking on. Has three charges and will require a chemfuel reload after they are spent.</li>
+				</commandDescriptions>
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>

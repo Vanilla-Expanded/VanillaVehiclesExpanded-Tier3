@@ -22,7 +22,7 @@
 		</statBases>
 		
 		<researchPrerequisites>
-			<li>VVE_AerialVehicles</li>
+			<li>VVE_Louie</li>
 		</researchPrerequisites>
 		
 		<costList>

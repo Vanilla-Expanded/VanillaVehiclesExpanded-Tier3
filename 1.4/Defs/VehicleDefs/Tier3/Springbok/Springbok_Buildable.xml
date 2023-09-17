@@ -33,6 +33,11 @@
 			<Steel>260</Steel>
 			<ComponentIndustrial>14</ComponentIndustrial>
 			<Gold>100</Gold>
+			<VVE_CarFuelTank>1</VVE_CarFuelTank>
+			<VVE_CarTransmission>1</VVE_CarTransmission>
+			<VVE_CarRadiator>1</VVE_CarRadiator>
+			<VVE_CarWiring>1</VVE_CarWiring>
+			<VVE_CarBattery>1</VVE_CarBattery>
 		</costList>
 		
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>

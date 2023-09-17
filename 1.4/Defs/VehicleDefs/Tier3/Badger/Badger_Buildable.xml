@@ -7,7 +7,7 @@
 		<description>A tracked, armoured fighting vehicle, the Badger is designed to transport scouts and infantry while providing covering fire to suppress enemy troops. Reinforced side armour plating, ability to deploy blindsmoke and a powerful anti-infantry automated gun make it a powerful vehicle in small combat engagement. It’s relatively vulnerable to attacks from behind, and the short range of the turret means it is outclassed by most designated tanks.\n\nCompared to previous generations, this IFV is designed to quickly drop infantry off at a desired location and provide light covering fire. Lack of armor piercing on fired projectiles make it weak against enemy tanks.</description>
 		
 		<graphicData>
-			<texPath>Things/Vehicles/Tier3/Tier3_LAV/Tier3_LAV</texPath>
+			<texPath>Things/Vehicles/Tier3/Tier3_IFV/Tier3_IFV</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4, 6)</drawSize>
 		</graphicData>

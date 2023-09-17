@@ -1,31 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Badger_MainTurret</defName>
+		<label>high-explosive shell</label>
+		<description>A powerful turret mounted on a Todo infantry fighting vehicle. It’s explosive shots deal significant damage to enemy infantry, but it’s low armor-piercing makes it subpar against armored targets, and it uses up a lot of ammo.</description>
+		
+		<thingClass>Projectile_Explosive</thingClass>
+		
+		<graphicData>
+			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<speed>96</speed>
+			<explosionRadius>1.9</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
-		<defName>Paladin_MainTurret</defName>
-		<label>paladin smoke grenade launcher</label>
+		<defName>Badger_MainTurret</defName>
+		<label>badger chain gun</label>
 		<description>A smoke grenade launcher mounted on a Paladin LAV. Excellent for providing smoke cover to infantry, this turret has no offensive capabilities.</description>
 		
 		<turretType>Rotatable</turretType>
-		<shotSound>Shot_IncendiaryLauncher</shotSound>
+		<shotSound>VVE_IFVCannonSound</shotSound>
+		<reloadSound>VVE_IFVCannonReload</reloadSound>
 		
-		<projectile>Bullet_SmokeLauncher</projectile>
-		<reloadTimer>3.5</reloadTimer>
-		<warmUpTimer>3.5</warmUpTimer>
-		<chargePerAmmoCount>5</chargePerAmmoCount>
+		<projectile>Bullet_Badger_MainTurret</projectile>
+		<reloadTimer>4.4</reloadTimer>
+		<warmUpTimer>3.2</warmUpTimer>
 		
-		<magazineCapacity>50</magazineCapacity>
+		<magazineCapacity>150</magazineCapacity>
 		<genericAmmo>true</genericAmmo>
 		
 		<hitFlags>IntendedTarget</hitFlags>
 		
 		<autoSnapTargeting>false</autoSnapTargeting>
-		<rotationSpeed>2.95</rotationSpeed>
+		<rotationSpeed>2.6</rotationSpeed>
 		
-		<projectileOffset>1</projectileOffset>
+		<projectileOffset>1.25</projectileOffset>
 		
-		<minRange>2</minRange>
-		<maxRange>23.9</maxRange>
+		<minRange>2.9</minRange>
+		<maxRange>29.9</maxRange>
 		
 		<recoil>
 			<distanceTotal>0.15</distanceTotal>
@@ -40,30 +66,30 @@
 				<shotsPerBurst>1</shotsPerBurst>
 				<ticksBetweenShots>120</ticksBetweenShots>
 				<ticksBetweenBursts>120</ticksBetweenBursts>
-				<spreadRadius>2.9</spreadRadius>
+				<spreadRadius>0.9</spreadRadius>
 				<label>Single</label>
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 			<li>
-				<shotsPerBurst>3</shotsPerBurst>
-				<ticksBetweenShots>20</ticksBetweenShots>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>22</ticksBetweenShots>
 				<ticksBetweenBursts>90</ticksBetweenBursts>
-				<spreadRadius>5.9</spreadRadius>
+				<spreadRadius>2.9</spreadRadius>
 				<label>Burst</label>
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>
 			</li>
 		</fireModes>
 
 		<graphicData>
-			<texPath>Things/Vehicles/Tier3/Tier3_LAV/Tier3_LAV_CannonTop</texPath>
+			<texPath>Things/Vehicles/Tier3/Tier3_IFV/Tier3_IFV_CannonTop</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
-			<shaderType>Cutout</shaderType>
-			<drawSize>(2, 2)</drawSize>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(4, 4)</drawSize>
 		</graphicData>
 		
 		<ammunition>
 			<thingDefs>
-				<li>Chemfuel</li>
+				<li>Steel</li>
 			</thingDefs>
 		</ammunition>
 	</Vehicles.VehicleTurretDef>

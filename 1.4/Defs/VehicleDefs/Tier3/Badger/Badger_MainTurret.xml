@@ -4,7 +4,6 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_Badger_MainTurret</defName>
 		<label>high-explosive shell</label>
-		<description>A powerful turret mounted on a Todo infantry fighting vehicle. It’s explosive shots deal significant damage to enemy infantry, but it’s low armor-piercing makes it subpar against armored targets, and it uses up a lot of ammo.</description>
 		
 		<thingClass>Projectile_Explosive</thingClass>
 		
@@ -30,8 +29,7 @@
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Badger_MainTurret</defName>
 		<label>badger chain gun</label>
-		<description>A smoke grenade launcher mounted on a Paladin LAV. Excellent for providing smoke cover to infantry, this turret has no offensive capabilities.</description>
-		
+		<description>A powerful turret mounted on a Badger Infantry Fighting Vehicle. Its explosive shots deal significant damage to enemy infantry, but it’s low armor-piercing makes it subpar against armored targets, and it uses up a lot of ammo.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>VVE_IFVCannonSound</shotSound>
 		<reloadSound>VVE_IFVCannonReload</reloadSound>
@@ -48,7 +46,7 @@
 		<autoSnapTargeting>false</autoSnapTargeting>
 		<rotationSpeed>2.6</rotationSpeed>
 		
-		<projectileOffset>1.25</projectileOffset>
+		<projectileOffset>2.25</projectileOffset>
 		
 		<minRange>2.9</minRange>
 		<maxRange>29.9</maxRange>

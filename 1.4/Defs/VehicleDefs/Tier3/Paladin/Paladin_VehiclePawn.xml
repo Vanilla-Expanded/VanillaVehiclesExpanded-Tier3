@@ -95,17 +95,7 @@
 				<li>
 					<key>passenger</key>
 					<label>Passenger</label>
-					<slots>5</slots>
-					
-					<hitbox>
-						<cells>
-							<li>(0, 2)</li>
-							<li>(0, 1)</li>
-							<li>(0, 0)</li>
-							<li>(0, -1)</li>
-							<li>(0, -2)</li>
-						</cells>
-					</hitbox>
+					<slots>6</slots>
 				</li>
 			</roles>
 		</properties>

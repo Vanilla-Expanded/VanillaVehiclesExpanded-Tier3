@@ -310,5 +310,36 @@
 		</li>
 	</comps>
   </ThingDef>
+  
+  <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
+    <defName>VVE_InfantryFightingVehicleWreck</defName>
+    <label>infantry fighting vehicle wreck</label>
+    <description>An ancient, broken infantry fighting vehicle. Everything that isn't rusted away was looted long ago. Given enough resources, it can be restored into a Badger.</description>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Wrecks/Wreck_T3IFV</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,6)</drawSize>
+    </graphicData>
+    <size>(3,5)</size>
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+	  <Flammability>0</Flammability>
+    </statBases>
+    <killedLeavings>
+      <ChunkSlagSteel>6</ChunkSlagSteel>
+    </killedLeavings>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>VVE_Badger</vehicleDef>
+			<researchDef>VVE_LightArmoredVehicles</researchDef>
+			<spawnRotation>South</spawnRotation>
+		</li>
+	</comps>
+  </ThingDef>
 
 </Defs>

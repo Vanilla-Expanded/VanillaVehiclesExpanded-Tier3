@@ -73,6 +73,12 @@
 					<handlingTypes>
 						<li>Movement</li>
 					</handlingTypes>
+					
+					<hitbox>
+						<cells>
+							<li>(0, 2)</li>
+						</cells>
+					</hitbox>
 				</li>
 				<li>
 					<key>gunner</key>
@@ -85,6 +91,13 @@
 					<turretIds>
 						<li>mainTurret</li>
 					</turretIds>
+					
+					<hitbox>
+						<cells>
+							<li>(-1, 0)</li>
+							<li>(1, 0)</li>
+						</cells>
+					</hitbox>
 				</li>
 			</roles>
 		</properties>

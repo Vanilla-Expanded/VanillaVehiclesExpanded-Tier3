@@ -4,7 +4,7 @@
 	<Vehicles.VehicleDef ParentName="VehiclePawn_Mechanical">
 		<defName>VVE_BigRig</defName>
 		<label>Big Rig</label>
-		<description>An armoured all-rounder vehicle, the Nomad performs remarkably well in all categories with an excellent cargo and passenger capacity. Performs well in any and all terrain, with some minor issues in the cold.\n\nA relatively general purpose tier 3, effectively being a lightly armoured APC. While it excels in off road capabilities and works well in all situations, other vehicles perform even better on roads or in specialized tasks.</description>
+		<description>A heavy cargo truck a colossal cargo capacity, the Big Rig excels at long-range hauling in any terrain. Performs well off-road and in hills, but has some difficulties in winter conditions. \n\nDespite its massive cargo capacity and decent top speed, the Big Rig's slow acceleration and poor fuel efficiency make it better suited for long trips over difficult terrain than short jaunts on paved roads.</description>
 		
 		<graphicData>
 			<texPath>Things/Vehicles/Tier3/Tier3_Truck/Tier3_Truck</texPath>

@@ -23,6 +23,7 @@
 		<size>(3,10)</size>
 		
 		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
+		<canCaravan LockSetting = "True">false</canCaravan>
 		<vehicleCategory>Transport</vehicleCategory>
 		<techLevel>Industrial</techLevel>
 		<vehicleType>Air</vehicleType>

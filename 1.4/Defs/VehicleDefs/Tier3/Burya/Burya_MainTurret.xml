@@ -1,76 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-	<ThingDef ParentName="BaseBullet">
-		<defName>Rocket_Scytheman_MainTurret</defName>
-		<label>swarmer rocket</label>
-		<thingClass>VanillaVehiclesExpanded.Rocket_Scytheman</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/Rocket_Swarm</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>Bomb</damageDef>
-			<damageAmountBase>38</damageAmountBase>
-			<flyOverhead>true</flyOverhead>
-			<speed>24</speed>
-			<arcHeightFactor>40</arcHeightFactor>
-			<explosionRadius>4.9</explosionRadius>
-			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-			<soundExplode>MortarBomb_Explode</soundExplode>
-			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-			<soundAmbient>MortarRound_Ambient</soundAmbient>
-		</projectile>
-	</ThingDef>
-	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
-		<defName>Scytheman_MainTurret</defName>
+		<defName>Burya_MainTurret</defName>
 		<label>Rocket swarm turret</label>
-		<description>An inaccurate launcher capable of firing two barrages of rockets covering a large area. The turret does not fire until someone orders it to fire. It is very effective against large groups of weaker combatants, but less effective against small numbers of armored targets. Extensive firing may overheat and disable the turret.</description>
+		<description>A powerful multiple launch rocket system usually mounted on Burya, capable of firing powerful barrages of rockets covering a large area. The turret does not fire until someone orders it to fire. It is very effective against large groups of weaker combatants, but less effective against small numbers of armored targets. Extensive firing may overheat and disable the turret.</description>
 		
 		<turretType>Rotatable</turretType>
 		<shotSound>RocketswarmLauncher_Fire</shotSound>
 		<reloadSound>Artillery_ShellLoaded</reloadSound>
 		
 		<projectile>Rocket_Scytheman_MainTurret</projectile>
-		<reloadTimer>12.2</reloadTimer>
-		<warmUpTimer>3.6</warmUpTimer>
+		<reloadTimer>28</reloadTimer>
+		<warmUpTimer>0.12</warmUpTimer>
 		<chargePerAmmoCount>10</chargePerAmmoCount>
 		
-		<magazineCapacity>16</magazineCapacity>
+		<restrictionType>Vehicles.TurretRestrictions_Stationary</restrictionType>
+		
+		<magazineCapacity>44</magazineCapacity>
 		<genericAmmo>true</genericAmmo>
 		
 		<hitFlags>IntendedTarget</hitFlags>
 		
 		<autoSnapTargeting>false</autoSnapTargeting>
-		<rotationSpeed>1</rotationSpeed>
+		<rotationSpeed>0.15</rotationSpeed>
 		
-		<projectileOffset>0.1</projectileOffset>
+		<projectileOffset>1</projectileOffset>
 		
 		<minRange>20.9</minRange>
 		
 		<cooldown>
-			<heatPerShot>5</heatPerShot>
+			<heatPerShot>1</heatPerShot>
 			<dissipationRate>0.01667</dissipationRate> <!-- 1 per second -->
 		</cooldown>
 		
 		<fireModes>
 			<li>
-				<shotsPerBurst>8</shotsPerBurst>
+				<shotsPerBurst>16</shotsPerBurst>
 				<ticksBetweenShots>8</ticksBetweenShots>
 				<ticksBetweenBursts>240</ticksBetweenBursts>
-				<spreadRadius>15.9</spreadRadius>
+				<spreadRadius>9.9</spreadRadius>
 				<label>Burst</label>
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<spreadRadius>9.9</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
 
 		<graphicData>
-			<texPath>Things/Vehicles/Tier1/Tier1_RocketTruck/Tier1_RocketTruck_CannonTop</texPath>
+			<texPath>Things/Vehicles/Tier3/Tier3_RocketArtillery/Tier3_RocketArtillery_CannonTop</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
-			<shaderType>Cutout</shaderType>
-			<drawSize>(3, 3)</drawSize>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(5, 5)</drawSize>
 		</graphicData>
 		
 		<ammunition>
@@ -79,15 +64,15 @@
 			</thingDefs>
 		</ammunition>
 		
-		<!--
-		<motes>
-			<li>
-				<cycles>1</cycles>
-				<moteDef>Mote_CannonPlume</moteDef>
-				<offset>(0, 0, 2)</offset>
-				<animationType>Reset</animationType>
-			</li>
-		</motes>
-		-->
+		<projectileShifting>
+			<li>-0.75</li>
+			<li>0.5</li>
+			<li>-0.25</li>
+			<li>0.125</li>
+			<li>-0.125</li>
+			<li>0.25</li>
+			<li>-0.5</li>
+			<li>0.75</li>
+		</projectileShifting>
 	</Vehicles.VehicleTurretDef>
 </Defs>

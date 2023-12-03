@@ -12,6 +12,14 @@
 		
 		<projectile>Rocket_Scytheman_MainTurret</projectile>
 		<reloadTimer>28</reloadTimer>
+		
+		<reloadTimerMultiplierPerCrewCount>
+			<points>
+				<li>(1, 1)</li>
+				<li>(2, 0.25)</li>
+			</points>
+		</reloadTimerMultiplierPerCrewCount>
+		
 		<warmUpTimer>0.12</warmUpTimer>
 		<chargePerAmmoCount>10</chargePerAmmoCount>
 		

@@ -484,93 +484,24 @@
 				<fuelConsumptionRate>3200</fuelConsumptionRate>
 				<fuelCapacity>400</fuelCapacity>
 			</li>
-			<li Class="Vehicles.CompProperties_VehicleTurrets">
-				<turrets>
-					<li>
-						<turretDef>Goliath_SwarmTurret</turretDef>
-						
-						<renderProperties>
-							<north>(0, 0.93)</north>
-						</renderProperties>
-						
-						<gizmoLabel>Swarm Turret</gizmoLabel>
-						<autoTargeting>false</autoTargeting>
-						<targetPersists>false</targetPersists>
-						
-						<angleRestricted/>
-						<aimPieOffset>(0, -0.35)</aimPieOffset>
-						
-						<key>swarmTurret</key>
-					</li>
-					<li>
-						<turretDef>Goliath_MilitaryTurret</turretDef>
-						
-						<renderProperties>
-							<north>(-1.1, 1.955)</north>
-						</renderProperties>
-						
-						<gizmoLabel>Military Turret</gizmoLabel>
-						
-						<defaultAngleRotated>315</defaultAngleRotated>
-						<angleRestricted>(255, 15)</angleRestricted>
-						<aimPieOffset>(0, -0.35)</aimPieOffset>
-						
-						<key>militaryTurret1</key>
-					</li>
-					<li>
-						<turretDef>Goliath_MilitaryTurret</turretDef>
-						
-						<renderProperties>
-							<north>(1.1, 1.955)</north>
-						</renderProperties>
-						
-						<gizmoLabel>Military Turret</gizmoLabel>
-						
-						<defaultAngleRotated>45</defaultAngleRotated>
-						<angleRestricted>(345, 105)</angleRestricted>
-						<aimPieOffset>(0, -0.35)</aimPieOffset>
-						
-						<key>militaryTurret2</key>
-					</li>
-					<li>
-						<turretDef>Goliath_MilitaryTurret</turretDef>
-						
-						<renderProperties>
-							<north>(1.07, -0.71)</north>
-						</renderProperties>
-						
-						<gizmoLabel>Military Turret</gizmoLabel>
-						
-						<defaultAngleRotated>135</defaultAngleRotated>
-						<angleRestricted>(75, 195)</angleRestricted>
-						<aimPieOffset>(0, -0.35)</aimPieOffset>
-						
-						<key>militaryTurret3</key>
-					</li>
-					<li>
-						<turretDef>Goliath_MilitaryTurret</turretDef>
-						
-						<renderProperties>
-							<north>(-1.07, -0.71)</north>
-						</renderProperties>
-						
-						<gizmoLabel>Military Turret</gizmoLabel>
-						
-						<defaultAngleRotated>225</defaultAngleRotated>
-						<angleRestricted>(165, 285)</angleRestricted>
-						<aimPieOffset>(0, -0.35)</aimPieOffset>
-						
-						<key>militaryTurret4</key>
-					</li>
-				</turrets>
-			</li>
 			<li Class="Vehicles.CompProperties_VehicleLauncher">
 				<controlInFlight>false</controlInFlight>
+				<deployTicks>90</deployTicks>
+				
 				<launchProtocol Class="Vehicles.DefaultTakeoff">
 					<maxFlightNodes>1</maxFlightNodes>
 					<launchProperties>
 						<maxTicks>1800</maxTicks>
 						<renderShadow>false</renderShadow>
+						
+						<restriction Class = "Vehicles.LaunchRestriction_ComponentHealth">
+							<components>
+								<FirstBooster>0.45</FirstBooster>
+								<SecondBooster>0.45</SecondBooster>
+								<ThirdBooster>0.45</ThirdBooster>
+								<FourthBooster>0.45</FourthBooster>
+							</components>
+						</restriction>
 						
 						<events>
 							<li>
@@ -982,6 +913,46 @@
 									</points>
 								</speed>
 							</li>
+							<li>
+								<def>RocketExhaust_Short</def>
+								<angle>177~183</angle>
+								<lockFleckX>false</lockFleckX>
+								<lockFleckZ>false</lockFleckZ>
+								<runOutOfStep>false</runOutOfStep>
+								<originOffset>(0, 0, 0.15)</originOffset>
+								
+								<frequency Class="SmashTools.LinearCurve">
+									<points>
+										<li>(0.2, 0)</li>
+										<li>(0.3, 250)</li>
+										<li>(0.4, 250)</li>
+									</points>
+								</frequency>
+								
+								<rotationRate>
+									<points>
+										<li>(0, 3)</li>
+										<li>(1, 1)</li>
+									</points>
+								</rotationRate>
+								
+								<size Class="SmashTools.LinearCurve">
+									<points>
+										<li>(0, 3)</li>
+										<li>(0.7, 3)</li>
+										<li>(0.71, 5)</li>
+									</points>
+								</size>
+								
+								<speed Class="SmashTools.LinearCurve">
+									<points>
+										<li>(0.2, 45)</li>
+										<li>(0.7, 40</li>
+										<li>(0.71, 70)</li>
+										<li>(1, 65)</li>
+									</points>
+								</speed>
+							</li>
 						</fleckData>
 						
 						<fleckOneShots>
@@ -1037,48 +1008,49 @@
 					</launchProperties>
 					
 					<landingProperties>
-						<maxTicks>1200</maxTicks>
+						<maxTicks>500</maxTicks>
 						<renderShadow>false</renderShadow>
 						
 						<events>
 							<li>
-								<triggerAt>0.65</triggerAt>
-								<method>Vehicles.LaunchProtocol.SetOverlayStatus(false)</method>
+								<triggerAt>1</triggerAt>
+								<method>Vehicles.AerialAnimationEvents.ShakeCamera(5)</method>
 							</li>
 							<li>
-								<triggerAt>0.85</triggerAt>
-								<method>Vehicles.AerialAnimationEvents.ShakeCamera(0.5)</method>
+								<triggerAt>1</triggerAt>
+								<method>Vehicles.AerialAnimationEvents.Explode(8.9)</method>
 							</li>
 						</events>
 						
-						<zPositionCurve Class = "SmashTools.BezierCurve">
+						<zPositionCurve Class="SmashTools.BezierCurve">
 							<points>
-								<li>(0, 200)</li>
-								<li>(0.25, 0)</li>
-								<li>(0.5, 0)</li>
-								<li>(0.75, 0)</li>
+								<li>(0, 300)</li>
+								<li>(0.15, 250)</li>
+								<li>(0.5, 150)</li>
+								<li>(0.75, 100)</li>
 								<li>(1, 0)</li>
 							</points>
 						</zPositionCurve>
 						
 						<fleckData>
 							<li>
-								<def>Smoke</def>
-								<angle>0~360</angle>
+								<def>RocketSmoke</def>
+								<angle>145~215</angle>
+								<lockFleckX>false</lockFleckX>
+								<lockFleckZ>false</lockFleckZ>
 								<runOutOfStep>false</runOutOfStep>
 								
-								<drawOffset>
-									<points>
-										<li>(1, 2)</li>
-									</points>
-								</drawOffset>
+								<originOffsetRange>
+									<from>(-1.82, 0, -2)</from>
+									<to>(1.82, 0, -2)</to>
+								</originOffsetRange>
 								
 								<frequency Class="SmashTools.BezierCurve">
 									<points>
-										<li>(0.6, 0)</li>
-										<li>(0.75, 400)</li>
-										<li>(0.9, 100)</li>
-										<li>(0.95, 0)</li>
+										<li>(0, 0)</li>
+										<li>(0.1, 250)</li>
+										<li>(0.2, 0)</li>
+										<li>(0.5, 0)</li>
 										<li>(1, 0)</li>
 									</points>
 								</frequency>
@@ -1092,38 +1064,34 @@
 								
 								<size Class="SmashTools.BezierCurve">
 									<points>
-										<li>(0, 6)</li>
-										<li>(0.25, 5)</li>
-										<li>(0.75, 5)</li>
-										<li>(1, 5)</li>
+										<li>(0, 5)</li>
+										<li>(0.25, 7)</li>
+										<li>(0.75, 7)</li>
+										<li>(1, 7)</li>
 									</points>
 								</size>
 								
 								<speed Class="SmashTools.BezierCurve">
 									<points>
+										<li>(0, 4)</li>
+										<li>(0.25, 3)</li>
+										<li>(0.75, 3)</li>
 										<li>(1, 3)</li>
-										<li>(1, 2)</li>
 									</points>
 								</speed>
 							</li>
 							<li>
-								<def>RocketExhaust</def>
-								<angle>0~360</angle>
+								<def>RocketExhaust_Short</def>
+								<angle>177~183</angle>
+								<lockFleckX>false</lockFleckX>
+								<lockFleckZ>false</lockFleckZ>
 								<runOutOfStep>false</runOutOfStep>
+								<originOffset>(-1, 0, -0.15)</originOffset>
 								
-								<drawOffset>
+								<frequency Class="SmashTools.LinearCurve">
 									<points>
-										<li>(1, 0.5)</li>
-									</points>
-								</drawOffset>
-								
-								<frequency Class="SmashTools.BezierCurve">
-									<points>
-										<li>(0.55, 0)</li>
-										<li>(0.6, 250)</li>
-										<li>(0.7, 300)</li>
-										<li>(0.8, 250)</li>
-										<li>(0.9, 0)</li>
+										<li>(0, 250)</li>
+										<li>(0.97, 250)</li>
 										<li>(1, 0)</li>
 									</points>
 								</frequency>
@@ -1137,19 +1105,14 @@
 								
 								<size Class="SmashTools.BezierCurve">
 									<points>
-										<li>(0, 8)</li>
-										<li>(0.25, 6)</li>
-										<li>(0.75, 6)</li>
-										<li>(1, 6)</li>
+										<li>(0, 4.5)</li>
 									</points>
 								</size>
 								
-								<speed Class="SmashTools.BezierCurve">
+								<speed Class="SmashTools.LinearCurve">
 									<points>
-										<li>(0.6, 7)</li>
-										<li>(0.7, 9)</li>
-										<li>(0.8, 9)</li>
-										<li>(0.9, 5)</li>
+										<li>(0, 110)</li>
+										<li>(0.97, 110)</li>
 										<li>(1, 0)</li>
 									</points>
 								</speed>
@@ -1160,34 +1123,34 @@
 								<lockFleckX>false</lockFleckX>
 								<lockFleckZ>false</lockFleckZ>
 								<runOutOfStep>false</runOutOfStep>
-								<originOffset>(-1.1, 0, -0.5)</originOffset>
+								<originOffset>(1, 0, -0.15)</originOffset>
 								
 								<frequency Class="SmashTools.LinearCurve">
 									<points>
 										<li>(0, 250)</li>
-										<li>(0.62, 250)</li>
-										<li>(0.65, 0)</li>
+										<li>(0.97, 250)</li>
+										<li>(1, 0)</li>
 									</points>
 								</frequency>
 								
 								<rotationRate>
 									<points>
 										<li>(0, 3)</li>
+										<li>(1, 1)</li>
 									</points>
 								</rotationRate>
 								
 								<size Class="SmashTools.BezierCurve">
 									<points>
-										<li>(0, 3.5)</li>
+										<li>(0, 4.5)</li>
 									</points>
 								</size>
 								
-								<speed Class="SmashTools.BezierCurve">
+								<speed Class="SmashTools.LinearCurve">
 									<points>
-										<li>(0, 90)</li>
-										<li>(0.2, 70)</li>
-										<li>(0.4, 50)</li>
-										<li>(0.6, 50)</li>
+										<li>(0, 110)</li>
+										<li>(0.97, 110)</li>
+										<li>(1, 0)</li>
 									</points>
 								</speed>
 							</li>
@@ -1197,59 +1160,121 @@
 								<lockFleckX>false</lockFleckX>
 								<lockFleckZ>false</lockFleckZ>
 								<runOutOfStep>false</runOutOfStep>
-								<originOffset>(1.1, 0, -0.5)</originOffset>
+								<originOffset>(0, 0, 0.15)</originOffset>
 								
 								<frequency Class="SmashTools.LinearCurve">
 									<points>
 										<li>(0, 250)</li>
-										<li>(0.62, 250)</li>
-										<li>(0.65, 0)</li>
+										<li>(0.97, 250)</li>
+										<li>(1, 0)</li>
 									</points>
 								</frequency>
 								
 								<rotationRate>
 									<points>
 										<li>(0, 3)</li>
+										<li>(1, 1)</li>
 									</points>
 								</rotationRate>
 								
-								<size Class="SmashTools.BezierCurve">
+								<size Class="SmashTools.LinearCurve">
 									<points>
-										<li>(0, 3.5)</li>
+										<li>(0, 3)</li>
+										<li>(0.7, 3)</li>
+										<li>(0.71, 5)</li>
 									</points>
 								</size>
 								
-								<speed Class="SmashTools.BezierCurve">
+								<speed Class="SmashTools.LinearCurve">
 									<points>
-										<li>(0, 90)</li>
-										<li>(0.2, 70)</li>
-										<li>(0.4, 50)</li>
-										<li>(0.6, 50)</li>
+										<li>(0, 110)</li>
+										<li>(0.97, 110)</li>
+										<li>(1, 0)</li>
 									</points>
 								</speed>
 							</li>
 						</fleckData>
-						
-						<additionalTextures>
-							<li>
-								<texPath>Animations/JetEffect</texPath>
-								<graphicClass>Vehicles.Graphic_Animate</graphicClass>
-								<drawSize>(3, 3)</drawSize>
-								<drawOffset>(-1.1, 0, -2.75)</drawOffset>
-								<shaderType>TransparentPostLight</shaderType>
-								<layer>-1</layer>
-							</li>
-							<li>
-								<texPath>Animations/JetEffect</texPath>
-								<graphicClass>Vehicles.Graphic_Animate</graphicClass>
-								<drawSize>(3, 3)</drawSize>
-								<drawOffset>(1.1, 0, -2.75)</drawOffset>
-								<shaderType>TransparentPostLight</shaderType>
-								<layer>-1</layer>
-							</li>
-						</additionalTextures>
 					</landingProperties>
 				</launchProtocol>
+			</li>
+			<li Class="Vehicles.CompProperties_VehicleTurrets">
+				<turrets>
+					<li>
+						<turretDef>Goliath_SwarmTurret</turretDef>
+						
+						<renderProperties>
+							<north>(0, 0.93)</north>
+						</renderProperties>
+						
+						<gizmoLabel>Swarm Turret</gizmoLabel>
+						<autoTargeting>false</autoTargeting>
+						
+						<angleRestricted/>
+						<aimPieOffset>(0, -0.35)</aimPieOffset>
+						
+						<key>swarmTurret</key>
+					</li>
+					<li>
+						<turretDef>Goliath_MilitaryTurret</turretDef>
+						
+						<renderProperties>
+							<north>(-1.1, 1.955)</north>
+						</renderProperties>
+						
+						<gizmoLabel>Military Turret</gizmoLabel>
+						
+						<defaultAngleRotated>315</defaultAngleRotated>
+						<angleRestricted>(255, 15)</angleRestricted>
+						<aimPieOffset>(0, -0.35)</aimPieOffset>
+						
+						<key>militaryTurret1</key>
+					</li>
+					<li>
+						<turretDef>Goliath_MilitaryTurret</turretDef>
+						
+						<renderProperties>
+							<north>(1.1, 1.955)</north>
+						</renderProperties>
+						
+						<gizmoLabel>Military Turret</gizmoLabel>
+						
+						<defaultAngleRotated>45</defaultAngleRotated>
+						<angleRestricted>(345, 105)</angleRestricted>
+						<aimPieOffset>(0, -0.35)</aimPieOffset>
+						
+						<key>militaryTurret2</key>
+					</li>
+					<li>
+						<turretDef>Goliath_MilitaryTurret</turretDef>
+						
+						<renderProperties>
+							<north>(1.07, -0.71)</north>
+						</renderProperties>
+						
+						<gizmoLabel>Military Turret</gizmoLabel>
+						
+						<defaultAngleRotated>135</defaultAngleRotated>
+						<angleRestricted>(75, 195)</angleRestricted>
+						<aimPieOffset>(0, -0.35)</aimPieOffset>
+						
+						<key>militaryTurret3</key>
+					</li>
+					<li>
+						<turretDef>Goliath_MilitaryTurret</turretDef>
+						
+						<renderProperties>
+							<north>(-1.07, -0.71)</north>
+						</renderProperties>
+						
+						<gizmoLabel>Military Turret</gizmoLabel>
+						
+						<defaultAngleRotated>225</defaultAngleRotated>
+						<angleRestricted>(165, 285)</angleRestricted>
+						<aimPieOffset>(0, -0.35)</aimPieOffset>
+						
+						<key>militaryTurret4</key>
+					</li>
+				</turrets>
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>

@@ -15,7 +15,7 @@
 		<reloadTimer>12.2</reloadTimer>
 		<warmUpTimer>1</warmUpTimer>
 		<genericAmmo>true</genericAmmo>
-		<magazineCapacity>160</magazineCapacity>
+		<magazineCapacity>16</magazineCapacity>
 		<chargePerAmmoCount>10</chargePerAmmoCount>
 		
 		<autoSnapTargeting>false</autoSnapTargeting>

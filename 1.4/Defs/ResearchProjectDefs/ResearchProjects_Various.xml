@@ -126,5 +126,33 @@
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
   </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>VVE_RocketArtillery</defName>
+    <label>rocket artillery</label>
+    <description>Learn to build multiple launch rocket systems with the ability to blanket a whole area with missiles. In order to research this project, a burya wreck needs to be found and restored.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Industrial</techLevel>
+	<prerequisites>
+      <li>VVE_ComplexVehicles</li>
+    </prerequisites>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+	<tab>Vehicles</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>VVE_SiegePods</defName>
+    <label>siege pods</label>
+    <description>Learn to build powerful siege pods that act as temporary, moving bases during assaults in enemy territory. In order to research this project, a goliath wreck needs to be found and restored.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Industrial</techLevel>
+	<prerequisites>
+      <li>VVE_ComplexVehicles</li>
+    </prerequisites>
+    <researchViewX>13.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+	<tab>Vehicles</tab>
+  </ResearchProjectDef>
 
 </Defs>

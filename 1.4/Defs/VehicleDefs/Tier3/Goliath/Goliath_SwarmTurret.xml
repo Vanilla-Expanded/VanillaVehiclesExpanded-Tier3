@@ -37,7 +37,7 @@
 		</fireModes>
 		
 		<graphicData>
-			<texPath>Things/Vehicles/Tier3/Tier3_SiegePod/Tier3_SiegePod_RocketSwarmTurret</texPath>
+			<texPath>Things/Vehicles/Tier3/Tier3_SiegePod/Tier3_SiegePod_RocketswarmTurret</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(2, 2)</drawSize>

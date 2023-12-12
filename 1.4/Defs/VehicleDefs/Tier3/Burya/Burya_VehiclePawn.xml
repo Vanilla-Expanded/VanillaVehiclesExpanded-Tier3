@@ -572,7 +572,7 @@
 						
 						<gizmoLabel>Rocket salvo</gizmoLabel>
 						
-						<aimPieOffset>(0, 1.1)</aimPieOffset>\
+						<aimPieOffset>(0, 1.1)</aimPieOffset>
 						<autoTargeting>false</autoTargeting>
 						
 						<key>mainTurret</key>

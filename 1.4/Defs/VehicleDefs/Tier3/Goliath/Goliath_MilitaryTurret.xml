@@ -3,8 +3,8 @@
 <Defs>
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Goliath_MilitaryTurret</defName>
-		<label>goliath turret</label>
-		<description>A military-grade double barreled automatic turret, usually mounted on Goliath siegepods. Requires steel to refurbish its barrels after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+		<label>goliath military turret</label>
+		<description>A military-grade double barreled automatic turret, usually mounted on Goliath siegepods. Requires steel to refurbish its barrels after heavy use. May explode when damaged. It has a limited angle it can fire in.</description>
 		
 		<turretType>Rotatable</turretType>
 		<shotSound>GunShotA</shotSound>

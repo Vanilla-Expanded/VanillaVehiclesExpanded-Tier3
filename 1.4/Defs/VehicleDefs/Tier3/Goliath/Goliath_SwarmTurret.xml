@@ -3,8 +3,8 @@
 <Defs>
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Goliath_SwarmTurret</defName>
-		<label>toad artillery</label>
-		<description>A mortar turret that launches all kinds of shells, typically mounted on Toad siege pods. While it can inflict devastating damage, the mortar's inherent inaccuracy makes it more useful for attacking large fortifications than groups of enemies in the field.</description>
+		<label>goliath artillery</label>
+		<description>An inaccurate launcher capable of firing two barrages of rockets covering a large area. The turret does not fire until someone orders it to fire. It is very effective against large groups of weaker combatants, but less effective against small numbers of armored targets. Extensive firing may overheat and disable the turret.</description>
 		
 		<turretType>Rotatable</turretType>
 		<shotSound>RocketswarmLauncher_Fire</shotSound>
@@ -37,7 +37,7 @@
 		</fireModes>
 		
 		<graphicData>
-			<texPath>Things/Vehicles/Tier3/Tier3_SiegePod/Tier3_SiegePod_RocketSwarmTurret</texPath>
+			<texPath>Things/Vehicles/Tier3/Tier3_SiegePod/Tier3_SiegePod_Rocket_SwarmTurret</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(2, 2)</drawSize>

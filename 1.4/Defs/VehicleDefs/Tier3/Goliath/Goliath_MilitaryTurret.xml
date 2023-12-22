@@ -44,7 +44,7 @@
 		
 		<ammunition>
 			<thingDefs>
-				<li>Chemfuel</li>
+				<li>Steel</li>
 			</thingDefs>
 		</ammunition>
 	</Vehicles.VehicleTurretDef>

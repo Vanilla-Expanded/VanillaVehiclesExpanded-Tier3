@@ -49,6 +49,17 @@
 			<FlightSpeed>50</FlightSpeed>
 		</vehicleStats>
 		
+		<events>
+			<li>
+				<key>AerialVehicleOrdered</key>
+				<value>
+					<li>Vehicles.VehicleEventMethods.SetComponentHealth(FirstBooster, 0)</li>
+					<li>Vehicles.VehicleEventMethods.SetComponentHealth(SecondBooster, 0)</li>
+					<li>Vehicles.VehicleEventMethods.SetComponentHealth(ThirdBooster, 0)</li>
+					<li>Vehicles.VehicleEventMethods.SetComponentHealth(FourthBooster, 0)</li>
+				</value>
+			</li>
+		</events>
 		<soundSustainersOnEvent>
 			<li>
 				<key>(AerialVehicleLaunch, Despawned)</key>

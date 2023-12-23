@@ -19,7 +19,7 @@
 		</statBases>
 		
 		<researchPrerequisites>
-			<li>VVE_BasicVehicles</li>
+			<li>VVE_RocketArtillery</li>
 		</researchPrerequisites>
 		
 		<size>(3, 6)</size>

@@ -184,7 +184,7 @@
 			</li>
 			<li>
 				<key>ThirdLeftWheel</key>
-				<label>First Left Wheel</label>
+				<label>Third Left Wheel</label>
 				<health>70</health>
 				<depth>External</depth>
 				

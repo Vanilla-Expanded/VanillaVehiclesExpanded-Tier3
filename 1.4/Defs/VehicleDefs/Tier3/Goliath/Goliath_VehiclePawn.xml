@@ -223,6 +223,11 @@
 						<li>Turret</li>
 					</handlingTypes>
 				</li>
+				<li>
+					<key>passenger</key>
+					<label>Passenger</label>
+					<slots>4</slots>
+				</li>
 			</roles>
 		</properties>
 		

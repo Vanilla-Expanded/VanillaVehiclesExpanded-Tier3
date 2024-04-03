@@ -20,6 +20,7 @@ Versatile Helicopters: Meet diverse needs from cargo transport to troop movement
     <packageId>OskarPotocki.VanillaVehiclesExpandedTier3</packageId>
     <supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
     </supportedVersions>
     <modDependencies>
 		<li>

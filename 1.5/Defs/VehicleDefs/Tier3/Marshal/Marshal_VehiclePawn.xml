@@ -454,7 +454,7 @@
 				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 				<verbs>
 					<li>
-						<verbClass>Verb_Smokepop</verbClass>
+						<verbClass>VanillaVehiclesExpanded.Verb_Smokepop</verbClass>
 						<label>pop smoke</label>
 						<violent>false</violent>
 						<hasStandardCommand>true</hasStandardCommand>
@@ -465,7 +465,7 @@
 					</li>
 				</verbs>
 				<commandDescriptions>
-					<li>A defensive smokescreen. When activated, it will release a cloud of smoke, obscuring incoming shots and preventing turrets from locking on. Has three charges and will require a chemfuel reload after they are spent.</li>
+					<li>A defensive smokescreen. When activated, it will release a cloud of smoke, obscuring incoming shots and preventing turrets from locking on. Has three charges and will require a chemfuel reload after they are spent. Right click to reload.</li>
 				</commandDescriptions>
 			</li>
 		</comps>

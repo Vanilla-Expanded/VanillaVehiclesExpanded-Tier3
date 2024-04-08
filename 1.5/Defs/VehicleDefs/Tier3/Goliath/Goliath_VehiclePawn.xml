@@ -503,7 +503,9 @@
 			<li Class="Vehicles.CompProperties_VehicleLauncher">
 				<controlInFlight>false</controlInFlight>
 				<deployTicks>90</deployTicks>
-				
+				<canRoofPunch>true</canRoofPunch>
+				<animationPunchAt>0.995</animationPunchAt>
+
 				<launchProtocol Class="Vehicles.DefaultTakeoff">
 					<maxFlightNodes>1</maxFlightNodes>
 					<launchProperties>

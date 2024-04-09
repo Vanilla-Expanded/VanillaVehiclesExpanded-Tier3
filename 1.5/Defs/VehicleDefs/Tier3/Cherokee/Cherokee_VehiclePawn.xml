@@ -51,15 +51,18 @@
 				<value>VVE_VehicleEngineHeavy</value>
 			</li>
 			<li>
-				<key>(AerialVehicleLaunch, AerialVehicleLeftMap)</key>
+				<start>AerialVehicleLaunch</start>
+				<stop>AerialVehicleLeftMap</stop>
 				<value>VVE_VehicleDualRotorHelicopter</value>
 			</li>
 			<li>
-				<key>(AerialVehicleLanding, Spawned)</key>
+				<start>AerialVehicleLanding</start>
+				<stop>Spawned</stop>
 				<value>VVE_VehicleDualRotorHelicopter</value>
 			</li>
 			<li>
-				<key>(AerialVehicleCrashLanding, Spawned)</key>
+				<start>AerialVehicleCrashLanding</start>
+				<stop>Spawned</stop>
 				<value>VVE_VehicleDualRotorHelicopter</value>
 			</li>
 		</soundSustainersOnEvent>

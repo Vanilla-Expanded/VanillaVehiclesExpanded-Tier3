@@ -62,11 +62,13 @@
 		</events>
 		<soundSustainersOnEvent>
 			<li>
-				<key>(AerialVehicleLaunch, Despawned)</key>
+				<start>AerialVehicleLaunch</start>
+				<stop>Despawned</stop>
 				<value>VVE_VehicleEngineRocket</value>
 			</li>
 			<li>
-				<key>(AerialVehicleLanding, Spawned)</key>
+				<start>AerialVehicleLanding</start>
+				<stop>Spawned</stop>
 				<value>VVE_VehicleEngineRocket</value>
 			</li>
 		</soundSustainersOnEvent>

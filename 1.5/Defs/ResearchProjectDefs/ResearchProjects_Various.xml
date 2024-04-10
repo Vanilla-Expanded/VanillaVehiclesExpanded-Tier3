@@ -13,6 +13,14 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->classic car restoration</li>
+    <li>subject_story->began the journey of bringing elegance back to the roads by restoring a springbok wreck</li>
+    <li>subject_story->merged timeless designs with modern engineering to recreate the charm of classic cars</li>
+    <li>subject_gerund->reviving automotive elegance</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -27,6 +35,14 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->supercar engineering</li>
+    <li>subject_story->advanced to crafting vehicles that epitomize speed and luxury, starting with the restoration of a lightning wreck</li>
+    <li>subject_story->pushed the limits of performance and aesthetics to create the ultimate driving machines</li>
+    <li>subject_gerund->crafting speed and luxury</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -41,6 +57,14 @@
     <researchViewX>5.00</researchViewX>
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->battle tank production</li>
+    <li>subject_story->initiated the era of armored warfare by resurrecting the prowess of a marshal wreck</li>
+    <li>subject_story->combined devastating firepower with impenetrable armor to dominate the battlefield</li>
+    <li>subject_gerund->dominating with armored might</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -55,6 +79,14 @@
     <researchViewX>6.00</researchViewX>
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->light armored mobility</li>
+    <li>subject_story->stepped into the realm of tactical versatility by restoring wrecks like the paladin or badger</li>
+    <li>subject_story->designed vehicles that balance speed, protection, and firepower to support troops on the move</li>
+    <li>subject_gerund->enhancing battlefield mobility</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -69,6 +101,14 @@
     <researchViewX>7.00</researchViewX>
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->offroad jeep construction</li>
+    <li>subject_story->started mastering the craft of building versatile offroad jeeps like the nomad, requiring the restoration of a wreck</li>
+    <li>subject_story->unlocked the potential to explore and operate in previously inaccessible terrains</li>
+    <li>subject_gerund->navigating rugged landscapes</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -83,6 +123,14 @@
     <researchViewX>8.00</researchViewX>
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->louie helicopter development</li>
+    <li>subject_story->ventured into aerial logistics by learning to build the louie, a large transport helicopter, starting from a wreck</li>
+    <li>subject_story->enabled rapid and flexible transport of cargo and troops over vast distances</li>
+    <li>subject_gerund->mastering aerial transport</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -97,6 +145,14 @@
     <researchViewX>9.00</researchViewX>
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->big rig trucking</li>
+    <li>subject_story->advanced to constructing monumental long-haul trucks like the big rig or hermano, following the recovery and study of a wreck</li>
+    <li>subject_story->dramatically increased cargo capacity and operational range for ground transport</li>
+    <li>subject_gerund->revolutionizing overland cargo delivery</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -111,6 +167,14 @@
     <researchViewX>10.00</researchViewX>
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->cherokee helicopter creation</li>
+    <li>subject_story->expanded aerial logistics capabilities by designing the cherokee, a dual-rotor cargo helicopter, requiring the reconstruction of a wreck</li>
+    <li>subject_story->facilitated the movement of massive loads via air, bypassing ground-based obstacles</li>
+    <li>subject_gerund->lifting logistics to new heights</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -125,6 +189,14 @@
     <researchViewX>11.00</researchViewX>
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->self-propelled artillery construction</li>
+    <li>subject_story->embarked on creating the udar, a formidable self-propelled artillery piece, after restoring a wreck</li>
+    <li>subject_story->enhanced battlefield support with mobile artillery capable of precise, long-range bombardments on local maps</li>
+    <li>subject_gerund->deploying strategic firepower</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -139,6 +211,14 @@
     <researchViewX>12.00</researchViewX>
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->rocket artillery development</li>
+    <li>subject_story->progressed to assembling multiple launch rocket systems like the burya, necessitating the reconstruction of a wreck</li>
+    <li>subject_story->introduced area saturation capabilities with volleys of missiles, transforming area denial and suppression tactics</li>
+    <li>subject_gerund->massing aerial assault</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -153,6 +233,14 @@
     <researchViewX>13.00</researchViewX>
     <researchViewY>2.00</researchViewY>
 	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->siege pod engineering</li>
+    <li>subject_story->advanced to fabricating siege pods for dynamic assault bases, following the salvage of a goliath wreck</li>
+    <li>subject_story->created mobile bases that can be deployed during assaults, providing logistical and combat support in enemy territory</li>
+    <li>subject_gerund->establishing mobile fortresses</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
 
 </Defs>

@@ -9,7 +9,7 @@
 		<graphicData>
 			<texPath>Things/Vehicles/Tier3/Tier3_LAV/Tier3_LAV</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4, 6)</drawSize>
+			<drawSize>(4, 7)</drawSize>
 		</graphicData>
 		
 		<statBases>

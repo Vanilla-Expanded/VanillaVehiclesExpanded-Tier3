@@ -52,7 +52,7 @@
 		
 		<properties>
 			<winterSpeedMultiplier>1.1</winterSpeedMultiplier>
-			
+			<visibilityWeight>6.5</visibilityWeight>
 			<customRoadCosts AssignDefaults = "0.75" />
 			
 			<customHillinessCosts>

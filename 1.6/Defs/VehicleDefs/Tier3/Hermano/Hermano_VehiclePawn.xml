@@ -51,7 +51,7 @@
 		<properties>
 			<worldSpeedMultiplier>1.2</worldSpeedMultiplier>
 			<winterSpeedMultiplier>1.5</winterSpeedMultiplier>
-			
+			<visibilityWeight>8.5</visibilityWeight>
 			<customRoadCosts AssignDefaults = "0.75" />
 			
 			<vehicleJobLimitations>

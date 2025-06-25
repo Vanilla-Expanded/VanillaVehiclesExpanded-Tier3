@@ -51,7 +51,7 @@
 		<properties>
 			<offRoadMultiplier>2</offRoadMultiplier>
 			<winterSpeedMultiplier>3</winterSpeedMultiplier>
-			
+			<visibilityWeight>5.5</visibilityWeight>
 			<customRoadCosts AssignDefaults = "0.25"/>
 			
 			<roles>

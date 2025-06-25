@@ -54,7 +54,8 @@
 			<customRoadCosts AssignDefaults = "0.95"/>
 			<worldSpeedMultiplier>1.05</worldSpeedMultiplier>
 			<winterCostMultiplier>0.95</winterCostMultiplier>
-			
+			<visibilityWeight>9.5</visibilityWeight>
+
 			<roles>
 				<li>
 					<key>driver</key>

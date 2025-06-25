@@ -52,7 +52,8 @@
 		
 		<properties>
 			<customRoadCosts AssignDefaults = "0.8"/>
-			
+			<visibilityWeight>9.5</visibilityWeight>
+
 			<customHillinessCosts>
 				<SmallHills>0.45</SmallHills>
 				<LargeHills>0.95</LargeHills>

@@ -55,7 +55,8 @@
 			<offRoadMultiplier>0.95</offRoadMultiplier>
 			<winterCostMultiplier>2.125</winterCostMultiplier>
 			<worldSpeedMultiplier>1.05</worldSpeedMultiplier>
-			
+			<visibilityWeight>7</visibilityWeight>
+
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 2)</li>
 			</vehicleJobLimitations>

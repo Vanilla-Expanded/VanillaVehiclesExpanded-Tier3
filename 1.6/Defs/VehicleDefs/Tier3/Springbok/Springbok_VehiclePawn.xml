@@ -50,7 +50,8 @@
 		
 		<properties>
 			<winterSpeedMultiplier>1.2</winterSpeedMultiplier>
-			
+			<visibilityWeight>3</visibilityWeight>
+
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 2)</li>
 			</vehicleJobLimitations>

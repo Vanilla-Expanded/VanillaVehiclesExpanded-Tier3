@@ -106,6 +106,8 @@
 		</drawProperties>
 		
 		<properties>
+      <visibilityWeight>10</visibilityWeight>
+
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 4)</li>
 			</vehicleJobLimitations>

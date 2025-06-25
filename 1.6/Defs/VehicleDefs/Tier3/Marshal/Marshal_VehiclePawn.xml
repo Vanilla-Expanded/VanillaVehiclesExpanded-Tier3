@@ -52,6 +52,7 @@
 		</soundSustainersOnEvent>
 		
 		<properties>
+      <visibilityWeight>8</visibilityWeight>
 			<customRoadCosts AssignDefaults = "0.8"/>
 			
 			<customHillinessCosts>

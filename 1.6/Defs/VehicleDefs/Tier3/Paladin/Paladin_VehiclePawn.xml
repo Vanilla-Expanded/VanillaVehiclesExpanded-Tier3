@@ -600,7 +600,7 @@
 							<east>(-0.18, 0.2)</east>
 						</renderProperties>
 						
-						<gizmoLabel>Main Turret</gizmoLabel>
+						<gizmoLabel>Main turret</gizmoLabel>
 						
 						<angleRestricted/>
 						<aimPieOffset>(0, 0.25)</aimPieOffset>

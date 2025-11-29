@@ -27,7 +27,7 @@
 	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Marshal_MainTurret</defName>
-		<label>Main Turret</label>
+		<label>Main turret</label>
 		<description>A large and powerful tank cannon capable of firing explosive shells over long distance. Usually mounted on Marshal tanks.</description>
 		
 		<turretType>Rotatable</turretType>

@@ -133,7 +133,7 @@
 			</li>
 			<li>
 				<key>FirstLeftWheel</key>
-				<label>First Left Wheel</label>
+				<label>First left wheel</label>
 				<health>70</health>
 				<depth>External</depth>
 				
@@ -159,7 +159,7 @@
 			</li>
 			<li>
 				<key>SecondLeftWheel</key>
-				<label>Second Left Wheel</label>
+				<label>Second left wheel</label>
 				<health>70</health>
 				<depth>External</depth>
 				
@@ -185,7 +185,7 @@
 			</li>
 			<li>
 				<key>ThirdLeftWheel</key>
-				<label>Third Left Wheel</label>
+				<label>Third left wheel</label>
 				<health>70</health>
 				<depth>External</depth>
 				
@@ -211,7 +211,7 @@
 			</li>
 			<li>
 				<key>FourthLeftWheel</key>
-				<label>Fourth Left Wheel</label>
+				<label>Fourth left wheel</label>
 				<health>70</health>
 				<depth>External</depth>
 				
@@ -237,7 +237,7 @@
 			</li>
 			<li>
 				<key>FirstRightWheel</key>
-				<label>First Right Wheel</label>
+				<label>First right wheel</label>
 				<health>70</health>
 				<depth>External</depth>
 				
@@ -263,7 +263,7 @@
 			</li>
 			<li>
 				<key>SecondRightWheel</key>
-				<label>Second Right Wheel</label>
+				<label>Second right wheel</label>
 				<health>70</health>
 				<depth>External</depth>
 				
@@ -289,7 +289,7 @@
 			</li>
 			<li>
 				<key>ThirdRightWheel</key>
-				<label>Third Right Wheel</label>
+				<label>Third right wheel</label>
 				<health>70</health>
 				<depth>External</depth>
 				
@@ -315,7 +315,7 @@
 			</li>
 			<li>
 				<key>FourthRightWheel</key>
-				<label>Fourth Right Wheel</label>
+				<label>Fourth right wheel</label>
 				<health>70</health>
 				<depth>External</depth>
 				
@@ -341,7 +341,7 @@
 			</li>
 			<li>
 				<key>FirstLeftSuspension</key>
-				<label>First Left Suspension</label>
+				<label>First left suspension</label>
 				<health>20</health>
 				<depth>Internal</depth>
 				
@@ -357,7 +357,7 @@
 			</li>
 			<li>
 				<key>SecondLeftSuspension</key>
-				<label>Second Left Suspension</label>
+				<label>Second left suspension</label>
 				<health>20</health>
 				<depth>Internal</depth>
 				
@@ -373,7 +373,7 @@
 			</li>
 			<li>
 				<key>ThirdLeftSuspension</key>
-				<label>Third Left Suspension</label>
+				<label>Third left suspension</label>
 				<health>20</health>
 				<depth>Internal</depth>
 				
@@ -389,7 +389,7 @@
 			</li>
 			<li>
 				<key>FourthLeftSuspension</key>
-				<label>Fourth Left Suspension</label>
+				<label>Fourth left suspension</label>
 				<health>20</health>
 				<depth>Internal</depth>
 				
@@ -405,7 +405,7 @@
 			</li>
 			<li>
 				<key>FirstRightSuspension</key>
-				<label>First Right Suspension</label>
+				<label>First right suspension</label>
 				<health>20</health>
 				<depth>Internal</depth>
 				
@@ -421,7 +421,7 @@
 			</li>
 			<li>
 				<key>SecondRightSuspension</key>
-				<label>Second Right Suspension</label>
+				<label>Second right suspension</label>
 				<health>20</health>
 				<depth>Internal</depth>
 				
@@ -437,7 +437,7 @@
 			</li>
 			<li>
 				<key>ThirdRightSuspension</key>
-				<label>Third Right Suspension</label>
+				<label>Third right suspension</label>
 				<health>20</health>
 				<depth>Internal</depth>
 				
@@ -453,7 +453,7 @@
 			</li>
 			<li>
 				<key>FourthRightSuspension</key>
-				<label>Fourth Right Suspension</label>
+				<label>Fourth right suspension</label>
 				<health>20</health>
 				<depth>Internal</depth>
 				
@@ -485,7 +485,7 @@
 			</li>
 			<li>
 				<key>FrontArmorPlating</key>
-				<label>Front Armor Plating</label>
+				<label>Front armor plating</label>
 				<health>220</health>
 				<depth>External</depth>
 				
@@ -495,7 +495,7 @@
 			</li>
 			<li>
 				<key>LeftArmorPlating</key>
-				<label>Left Armor Plating</label>
+				<label>Left armor plating</label>
 				<health>220</health>
 				<depth>External</depth>
 				
@@ -505,7 +505,7 @@
 			</li>
 			<li>
 				<key>RightArmorPlating</key>
-				<label>Right Armor Plating</label>
+				<label>Right armor plating</label>
 				<health>220</health>
 				<depth>External</depth>
 				
@@ -515,7 +515,7 @@
 			</li>
 			<li>
 				<key>BackArmorPlating</key>
-				<label>Rear Armor Plating</label>
+				<label>Rear armor plating</label>
 				<health>90</health>
 				<depth>External</depth>
 				
@@ -562,7 +562,7 @@
 			</li>
 			<li>
 				<key>SteeringApparatus</key>
-				<label>Steering Apparatus</label>
+				<label>Steering apparatus</label>
 				<health>40</health>
 				<depth>Internal</depth>
 				<hitWeight>2</hitWeight>

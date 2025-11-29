@@ -140,7 +140,7 @@
 		<components>
 			<li>
 				<key>FrontEngine</key>
-				<label>Front Engine</label>
+				<label>Front engine</label>
 				<health>60</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
 				<depth>Internal</depth>
@@ -163,7 +163,7 @@
 			</li>
 			<li>
 				<key>RearEngine</key>
-				<label>Rear Engine</label>
+				<label>Rear engine</label>
 				<health>60</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
 				<depth>Internal</depth>
@@ -186,7 +186,7 @@
 			</li>
 			<li>
 				<key>FrontLeftLandingWheel</key>
-				<label>Front Left Landing Wheel</label>
+				<label>Front left landing wheel</label>
 				<health>40</health>
 				<depth>External</depth>
 				
@@ -212,7 +212,7 @@
 			</li>
 			<li>
 				<key>FrontRightLandingWheel</key>
-				<label>Front Right Landing Wheel</label>
+				<label>Front right landing wheel</label>
 				<health>40</health>
 				<depth>External</depth>
 				
@@ -238,7 +238,7 @@
 			</li>
 			<li>
 				<key>RearLeftLandingWheel</key>
-				<label>Rear Left Landing Wheel</label>
+				<label>Rear left landing wheel</label>
 				<health>40</health>
 				<depth>External</depth>
 				
@@ -264,7 +264,7 @@
 			</li>
 			<li>
 				<key>RearRightLandingWheel</key>
-				<label>Rear Right Landing Wheel</label>
+				<label>Rear right landing wheel</label>
 				<health>40</health>
 				<depth>External</depth>
 				
@@ -290,7 +290,7 @@
 			</li>
 			<li>
 				<key>FrontLeftSuspension</key>
-				<label>Front Left Suspension</label>
+				<label>Front left suspension</label>
 				<health>20</health>
 				<depth>Internal</depth>
 				
@@ -306,7 +306,7 @@
 			</li>
 			<li>
 				<key>FrontEngineCover</key>
-				<label>Front Engine Cover</label>
+				<label>Front engine cover</label>
 				<health>120</health>
 				<depth>External</depth>
 				
@@ -320,7 +320,7 @@
 			</li>
 			<li>
 				<key>RearEngineCover</key>
-				<label>Rear Engine Cover</label>
+				<label>Rear engine cover</label>
 				<health>120</health>
 				<depth>External</depth>
 				
@@ -334,7 +334,7 @@
 			</li>
 			<li>
 				<key>LeftFuelIntake</key>
-				<label>Left Fuel Intake</label>
+				<label>Left fuel intake</label>
 				<health>50</health>
 				<depth>External</depth>
 				
@@ -346,7 +346,7 @@
 			</li>
 			<li>
 				<key>RightFuelIntake</key>
-				<label>Right Fuel Intake</label>
+				<label>Right fuel intake</label>
 				<health>50</health>
 				<depth>External</depth>
 				
@@ -358,7 +358,7 @@
 			</li>
 			<li>
 				<key>FrontTransmission</key>
-				<label>Front Transmission</label>
+				<label>Front transmission</label>
 				<health>50</health>
 				<depth>Internal</depth>
 				
@@ -369,7 +369,7 @@
 			</li>
 			<li>
 				<key>RearTransmission</key>
-				<label>Rear Transmission</label>
+				<label>Rear transmission</label>
 				<health>50</health>
 				<depth>Internal</depth>
 				
@@ -380,7 +380,7 @@
 			</li>
 			<li>
 				<key>LeftTurboShaft</key>
-				<label>Left Turbo Shaft</label>
+				<label>Left turbo shaft</label>
 				<health>100</health>
 				<depth>External</depth>
 				
@@ -399,7 +399,7 @@
 			</li>
 			<li>
 				<key>RightTurboShaft</key>
-				<label>Right Turbo Shaft</label>
+				<label>Right turbo shaft</label>
 				<health>100</health>
 				<depth>External</depth>
 				
@@ -418,7 +418,7 @@
 			</li>
 			<li>
 				<key>LeftFrontalPanel</key>
-				<label>Left Frontal Panel</label>
+				<label>Left frontal panel</label>
 				<health>120</health>
 				<depth>External</depth>
 				
@@ -433,7 +433,7 @@
 			</li>
 			<li>
 				<key>RightFrontalPanel</key>
-				<label>Right Frontal Panel</label>
+				<label>Right frontal panel</label>
 				<health>120</health>
 				<depth>External</depth>
 				
@@ -448,7 +448,7 @@
 			</li>
 			<li>
 				<key>LeftRearPanel</key>
-				<label>Left Rear Panel</label>
+				<label>Left rear panel</label>
 				<health>120</health>
 				<depth>External</depth>
 				
@@ -465,7 +465,7 @@
 			</li>
 			<li>
 				<key>RightRearPanel</key>
-				<label>Right Rear Panel</label>
+				<label>Right rear panel</label>
 				<health>120</health>
 				<depth>External</depth>
 				
@@ -499,14 +499,14 @@
 			</li>
 			<li>
 				<key>FrontRotorMast</key>
-				<label>Front Rotor Mast</label>
+				<label>Front rotor mast</label>
 				<health>100</health>
 				<depth>External</depth>
 				<hitWeight>5</hitWeight>
 			</li>
 			<li>
 				<key>RearRotorMast</key>
-				<label>Rear Rotor Mast</label>
+				<label>Rear rotor mast</label>
 				<health>100</health>
 				<depth>External</depth>
 				<hitWeight>5</hitWeight>
@@ -533,14 +533,14 @@
 			</li>
 			<li>
 				<key>FrontServos</key>
-				<label>Front Servos</label>
+				<label>Front servos</label>
 				<health>100</health>
 				<depth>Internal</depth>
 				<hitWeight>2</hitWeight>
 			</li>
 			<li>
 				<key>RearServos</key>
-				<label>Rear Servos</label>
+				<label>Rear servos</label>
 				<health>100</health>
 				<depth>Internal</depth>
 				<hitWeight>2</hitWeight>

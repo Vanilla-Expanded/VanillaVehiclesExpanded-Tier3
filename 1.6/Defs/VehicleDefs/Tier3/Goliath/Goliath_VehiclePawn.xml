@@ -158,7 +158,7 @@
 				</li>
 				<li>
 					<key>MainGunner</key>
-					<label>Swarm Gunner</label>
+					<label>Swarm gunner</label>
 					<slots>1</slots>
 					<slotsToOperate>1</slotsToOperate>
 					
@@ -259,7 +259,7 @@
 			</li>
 			<li>
 				<key>FirstThruster</key>
-				<label>First Thruster</label>
+				<label>First thruster</label>
 				<health>80</health>
 				<depth>External</depth>
 				
@@ -284,7 +284,7 @@
 			</li>
 			<li>
 				<key>SecondThruster</key>
-				<label>Second Thruster</label>
+				<label>Second thruster</label>
 				<health>80</health>
 				<depth>External</depth>
 				
@@ -309,7 +309,7 @@
 			</li>
 			<li>
 				<key>ThirdThruster</key>
-				<label>Third Thruster</label>
+				<label>Third thruster</label>
 				<health>80</health>
 				<depth>External</depth>
 				
@@ -334,7 +334,7 @@
 			</li>
 			<li>
 				<key>FourthThruster</key>
-				<label>Fourth Thruster</label>
+				<label>Fourth thruster</label>
 				<health>80</health>
 				<depth>External</depth>
 				
@@ -359,7 +359,7 @@
 			</li>
 			<li>
 				<key>FirstBooster</key>
-				<label>First Booster</label>
+				<label>First booster</label>
 				<health>100</health>
 				<depth>External</depth>
 				
@@ -379,7 +379,7 @@
 			</li>
 			<li>
 				<key>SecondBooster</key>
-				<label>Second Booster</label>
+				<label>Second booster</label>
 				<health>100</health>
 				<depth>External</depth>
 				
@@ -399,7 +399,7 @@
 			</li>
 			<li>
 				<key>ThirdBooster</key>
-				<label>Third Booster</label>
+				<label>Third booster</label>
 				<health>100</health>
 				<depth>External</depth>
 				
@@ -419,7 +419,7 @@
 			</li>
 			<li>
 				<key>FourthBooster</key>
-				<label>Fourth Booster</label>
+				<label>Fourth booster</label>
 				<health>100</health>
 				<depth>External</depth>
 				
@@ -466,7 +466,7 @@
 			</li>
 			<li>
 				<key>BlastShield</key>
-				<label>Blast Shield</label>
+				<label>Blast shield</label>
 				<health>300</health>
 				<depth>External</depth>
 				

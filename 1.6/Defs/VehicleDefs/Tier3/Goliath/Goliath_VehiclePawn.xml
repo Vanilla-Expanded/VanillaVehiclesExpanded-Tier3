@@ -1227,7 +1227,7 @@
 							<north>(0, 0.93)</north>
 						</renderProperties>
 						
-						<gizmoLabel>Swarm Turret</gizmoLabel>
+						<gizmoLabel>Swarm turret</gizmoLabel>
 						<autoTargeting>false</autoTargeting>
 						
 						<angleRestricted/>
@@ -1242,7 +1242,7 @@
 							<north>(-1.1, 1.955)</north>
 						</renderProperties>
 						
-						<gizmoLabel>Military Turret</gizmoLabel>
+						<gizmoLabel>Military turret</gizmoLabel>
 						
 						<defaultAngleRotated>315</defaultAngleRotated>
 						<angleRestricted>(255, 15)</angleRestricted>
@@ -1257,7 +1257,7 @@
 							<north>(1.1, 1.955)</north>
 						</renderProperties>
 						
-						<gizmoLabel>Military Turret</gizmoLabel>
+						<gizmoLabel>Military turret</gizmoLabel>
 						
 						<defaultAngleRotated>45</defaultAngleRotated>
 						<angleRestricted>(345, 105)</angleRestricted>
@@ -1272,7 +1272,7 @@
 							<north>(1.07, -0.71)</north>
 						</renderProperties>
 						
-						<gizmoLabel>Military Turret</gizmoLabel>
+						<gizmoLabel>Military turret</gizmoLabel>
 						
 						<defaultAngleRotated>135</defaultAngleRotated>
 						<angleRestricted>(75, 195)</angleRestricted>
@@ -1287,7 +1287,7 @@
 							<north>(-1.07, -0.71)</north>
 						</renderProperties>
 						
-						<gizmoLabel>Military Turret</gizmoLabel>
+						<gizmoLabel>Military turret</gizmoLabel>
 						
 						<defaultAngleRotated>225</defaultAngleRotated>
 						<angleRestricted>(165, 285)</angleRestricted>

@@ -89,7 +89,7 @@
 			<roles>
 				<li>
 					<key>pilot</key>
-					<label>Pilot</label>
+					<label>pilot</label>
 					<slots>1</slots>
 					<slotsToOperate>1</slotsToOperate>
 					
@@ -105,7 +105,7 @@
 				</li>
 				<li>
 					<key>passenger</key>
-					<label>Passenger</label>
+					<label>passenger</label>
 					<slots>5</slots>
 					
 					<hitbox>

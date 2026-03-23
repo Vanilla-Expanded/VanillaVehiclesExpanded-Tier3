@@ -115,7 +115,7 @@
 			<roles>
 				<li>
 					<key>pilot</key>
-					<label>Pilot</label>
+					<label>pilot</label>
 					<slots>2</slots>
 					<slotsToOperate>2</slotsToOperate>
 					
